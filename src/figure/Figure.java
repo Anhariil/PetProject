@@ -1,4 +1,4 @@
-package io.figure;
+package figure;
 /**
  * Parents Class with  few general property and function
  */
