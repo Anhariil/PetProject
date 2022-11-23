@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="minor fix">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure/Figure.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure/src/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure/src/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figure/src/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="Add and understand package" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +24,13 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2HwYUBDtjO6o5XZLn7ioHk8LxSA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -53,6 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "18",
+    "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -62,6 +56,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io\mo" />
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\.idea" />
@@ -106,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669201168799</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create base param and func to figure">
+      <created>1669204842412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669204842412</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add and understand package">
+      <created>1669209041019</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669209041019</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,10 +141,42 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="1-figure-module" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start project" />
     <MESSAGE value="minor fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fix" />
+    <MESSAGE value="Create base param and func to figure" />
+    <MESSAGE value="Add and understand package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add and understand package" />
   </component>
 </project>
