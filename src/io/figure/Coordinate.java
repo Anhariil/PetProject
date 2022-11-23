@@ -1,3 +1,5 @@
+package io.figure;
+
 /**
  * Class for set and get coordinate info
  */
