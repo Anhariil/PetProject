@@ -23,7 +23,9 @@ public class Coordinate {
     public double GetY() {
         return this.y;
     }
-    /*
-    public MoveX?
-     */
+
+    public void MoveY(double V){
+        this.y -= V;
+    }
+
 }
