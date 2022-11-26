@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="Add and understand package 2.0">
-      <change afterPath="$PROJECT_DIR$/src/figure/Square.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="add new figure and replace some code on true place">
+      <change afterPath="$PROJECT_DIR$/src/Visual/DisplayGraphics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visual/TestFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/figure/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/figure/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/figure/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Figure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,20 @@
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\.idea" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestFrame">
+    <configuration name="TestFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Visual.TestFrame" />
+      <module name="PetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Visual.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestProject" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="PetProject" />
       <module name="PetProject" />
@@ -77,6 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestFrame" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -122,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669209041019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add new figure and replace some code on true place">
+      <created>1669469155285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669469155285</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +209,7 @@
     <MESSAGE value="minor fix" />
     <MESSAGE value="Create base param and func to figure" />
     <MESSAGE value="Add and understand package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add and understand package" />
+    <MESSAGE value="add new figure and replace some code on true place" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new figure and replace some code on true place" />
   </component>
 </project>

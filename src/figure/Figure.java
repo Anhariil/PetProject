@@ -1,11 +1,9 @@
 package figure;
 
-import javax.lang.model.type.NullType;
-
 /**
  * Parents Class with  few general property and function
  */
-public class Figure {
+public abstract class Figure {
     public Coordinate center;
     private double square ;
 
@@ -21,10 +19,10 @@ public class Figure {
     /**
      * Get square of figure
      */
-    public double GetSquare() {return Double.NaN;};
+    public abstract double GetSquare();
 
     /**
-     * Move figure on V for moment
+     * Move figure on V for moment on X axis
      */
     public void MoveY(double V){
         this.center.MoveY(V);

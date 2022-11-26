@@ -12,4 +12,5 @@ public class Circle extends Figure {
     public double GetSquare(){
         return 3.14*this.radius*this.radius;
     }
+
 }
