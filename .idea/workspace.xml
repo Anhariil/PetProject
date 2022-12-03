@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="add new figure and replace some code on true place">
-      <change afterPath="$PROJECT_DIR$/src/Visual/DisplayGraphics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visual/TestFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/figure/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Figure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="DROP-1-iteration-0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,7 +157,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="DROP-1-iteration-0" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
