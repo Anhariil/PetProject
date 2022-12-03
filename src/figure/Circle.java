@@ -7,13 +7,10 @@ public class Circle extends Figure {
         super(X,Y); // call parent constructor
         this.radius = R;
     }
+
+    @Override
     public double GetSquare(){
         return 3.14*this.radius*this.radius;
     }
-    public double GetCenterX(){
-        return this.center.GetX();
-    }
-    public double GetCenterY(){
-        return this.center.GetY();
-    }
+
 }

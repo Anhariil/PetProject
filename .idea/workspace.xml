@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="Add and understand package" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="add lib JavaFX, but its not working, search solution">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/MigLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miglayout-core-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miglayout-core-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miglayout-core.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FXApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PetProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/DisplayGraphics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/FXApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/FXAppScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visual/TestFrame.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -30,7 +49,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HwYUBDtjO6o5XZLn7ioHk8LxSA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -47,23 +66,52 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "18",
     "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/Митя/IdeaProjects/PetProgect/src/UI/Welcome.fxml",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\fxml" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io\mo" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
-      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\.idea" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Visual.FXApp">
+    <configuration name="FXApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Visual.TestFrame" />
+      <module name="PetProject" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FXApp" />
+      <module name="PetProject" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestProject" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="PetProject" />
       <module name="PetProject" />
@@ -71,6 +119,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TestProject" />
+      <item itemvalue="Application.Visual.FXApp" />
+      <item itemvalue="Application.FXApp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Visual.FXApp" />
+        <item itemvalue="Application.FXApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -116,7 +175,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669209041019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add new figure and replace some code on true place">
+      <created>1669469155285</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669469155285</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add grafic shits">
+      <created>1669474362230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669474362230</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add lib JavaFX, but its not working, search solution">
+      <created>1670072261878</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670072261878</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +210,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="1-figure-module" />
+                        <option value="DROP-1-iteration-0" />
                       </list>
                     </value>
                   </entry>
@@ -177,6 +257,9 @@
     <MESSAGE value="minor fix" />
     <MESSAGE value="Create base param and func to figure" />
     <MESSAGE value="Add and understand package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add and understand package" />
+    <MESSAGE value="add new figure and replace some code on true place" />
+    <MESSAGE value="add grafic shits" />
+    <MESSAGE value="add lib JavaFX, but its not working, search solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lib JavaFX, but its not working, search solution" />
   </component>
 </project>
