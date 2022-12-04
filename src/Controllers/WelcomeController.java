@@ -21,13 +21,19 @@ public class WelcomeController {
     private Label Label1;
 
     @FXML
+    /**
+     * Here we write realisation all actions on this window
+     */
     void initialize() {
+        /**
+         *
+         */
         Button1.setOnAction(actionEvent -> {
-            if(Label1.getText() != "Я родился") {
-                Label1.setText("Я родился");
+            if(Label1.getText().equals("Я родился")) {
+                Label1.setText("Я умер(");
             }
             else {
-                Label1.setText("Я умер(");
+                Label1.setText("Я родился)");
             }
             Label1.setVisible(true);
         });
