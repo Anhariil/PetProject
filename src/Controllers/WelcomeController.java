@@ -26,7 +26,7 @@ public class WelcomeController {
      */
     void initialize() {
         /**
-         *
+         * Should be renamed to smth like AnalitickButton
          */
         Button1.setOnAction(actionEvent -> {
             if(Label1.getText().equals("Я родился")) {
