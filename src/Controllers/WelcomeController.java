@@ -29,7 +29,7 @@ public class WelcomeController {
          * Should be renamed to smth like AnalitickButton
          */
         Button1.setOnAction(actionEvent -> {
-            if(Label1.getText().equals("Я родился")) {
+            if(Label1.getText().equals("Я родился)")) {
                 Label1.setText("Я умер(");
             }
             else {
