@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="test username">
-      <change afterPath="$PROJECT_DIR$/src/ParameterStringBuilder.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="test add rest connector, have problem, but dont find solution today, continue tomorrow">
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Tinkoff/InstrumentService/InstrumentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Tinkoff/Tinkoff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PetProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FXApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PetProject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,9 +77,9 @@
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestProject">
-    <configuration name="FXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FXApp" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PetProject" />
       <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
@@ -90,7 +93,7 @@
       </method>
     </configuration>
     <configuration name="TestProject" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="PetProject" />
+      <option name="MAIN_CLASS_NAME" value="Connectors.Tinkoff.InstrumentService.GetCountries" />
       <module name="PetProject" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,8 +101,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestProject" />
-      <item itemvalue="Application.FXApp" />
+      <item itemvalue="Application.Main" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670164092432</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test add rest connector, have problem, but dont find solution today, continue tomorrow">
+      <created>1670272737866</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670272737866</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +268,18 @@
     <MESSAGE value="add lib JavaFX, but its not working, search solution" />
     <MESSAGE value="add lib JavaFX and its work! add some logic and fan" />
     <MESSAGE value="test username" />
-    <option name="LAST_COMMIT_MESSAGE" value="test username" />
+    <MESSAGE value="test add rest connector, have problem, but dont find solution today, continue tomorrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="test add rest connector, have problem, but dont find solution today, continue tomorrow" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Connectors/Tinkoff/InstrumentService/GetCountries.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
