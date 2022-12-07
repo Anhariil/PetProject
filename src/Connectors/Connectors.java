@@ -1,5 +1,7 @@
 package Connectors;
 
+import Connectors.Data.Mapping;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +11,7 @@ public class Connectors {
     protected String jsonOutputString;
     protected String jsonInputString;
     protected String method;
+    protected Mapping response;
 
     /**
      * Add two default headers -- <b>Content-Type</b> and <b>accept</b>
@@ -27,5 +30,16 @@ public class Connectors {
 
     public void setMethod(String method) {
         this.method = method;
+    }
+
+    @Override
+    public String toString() {
+        return "Connectors{" +
+                "response=" + response.toString() +
+                '}';
+    }
+
+    public String getResponse(){
+        return  response.toString();
     }
 }

@@ -1,4 +1,4 @@
-package Connectors.Tinkoff;
+package Connectors.Services.Tinkoff;
 
 import Connectors.Connectors;
 

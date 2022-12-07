@@ -1,6 +1,6 @@
-package Connectors.Tinkoff.InstrumentService;
+package Connectors.Services.Tinkoff.InstrumentService;
 
-import Connectors.Tinkoff.Tinkoff;
+import Connectors.Services.Tinkoff.Tinkoff;
 
 public class InstrumentsService extends Tinkoff {
     private static final String name = "InstrumentsService/";

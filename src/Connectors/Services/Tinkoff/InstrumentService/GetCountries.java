@@ -1,4 +1,6 @@
-package Connectors.Tinkoff.InstrumentService;
+package Connectors.Services.Tinkoff.InstrumentService;
+
+import Connectors.Data.GetCountriesResponseMap;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -72,8 +74,10 @@ public class GetCountries extends InstrumentsService {
                 response.append(responseLine.trim());
             }
             this.jsonInputString = response.toString();
-            System.out.println(this.jsonInputString); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
+            //System.out.println(this.jsonInputString); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
         }
+
+        this.response = new GetCountriesResponseMap(this.jsonInputString);
 //        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 //        String inputLine;
 //        StringBuffer content = new StringBuffer();
