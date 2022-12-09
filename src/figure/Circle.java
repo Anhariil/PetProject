@@ -1,7 +1,7 @@
 package figure;
 
 public class Circle extends Figure {
-    private double radius;
+    private final double radius;
 
     public Circle(double X, double Y, double R) {
         super(X,Y); // call parent constructor

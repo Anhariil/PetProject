@@ -1,8 +1,8 @@
 package figure;
 
 public class Triangle extends Figure{
-    private Coordinate top; // coordinate top of triangle
-    private double r; // distance from center to top
+    private final Coordinate top; // coordinate top of triangle
+    private final double r; // distance from center to top
 
     public Triangle(double X, double Y, double R){
         super(X,Y);

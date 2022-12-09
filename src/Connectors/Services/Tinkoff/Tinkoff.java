@@ -2,6 +2,8 @@ package Connectors.Services.Tinkoff;
 
 import Connectors.Connectors;
 
+import java.io.IOException;
+
 public class Tinkoff extends Connectors {
     private static final String UrlTinkoffProd = "https://invest-public-api.tinkoff.ru/rest/tinkoff.public.invest.api.contract.v1.";
     private static final String UrlTinkoffSandBox = "https://sandbox-invest-public-api.tinkoff.ru/rest/tinkoff.public.invest.api.contract.v1.";

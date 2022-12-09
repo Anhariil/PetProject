@@ -3,20 +3,19 @@ package Connectors.Data;
 import java.util.Arrays;
 
 public class GetCountriesResponseMap extends Mapping {
-    private Country countries[];
+    private final Country[] countries;
 
     public GetCountriesResponseMap(String response){
         String notParsedResponse = response; // general string wth response
-        String subSubStrings[]; // string wth
+        String[] subSubStrings; // string wth
         String alfaTwo;
         String alfaThree;
         String name;
         String nameBrief;
 
         notParsedResponse = notParsedResponse.substring(14,notParsedResponse.length()-4); // delete {"countries": [ and "}]} in the end
-        //notParsedResponse.trim(); //delete all " " in string
         String forSearch = "\"},";
-        String subStrings[] = notParsedResponse.split(forSearch,0); // get substring wth information about one country
+        String[] subStrings = notParsedResponse.split(forSearch,0); // get substring wth information about one country
         this.countries = new Country[subStrings.length];
         for (int i = 0; i < subStrings.length; i++) {
             subStrings[i] = subStrings[i].substring(2); // delete {"
