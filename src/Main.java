@@ -13,12 +13,13 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("/UI/Welcome.fxml")); // имя файла - в данном случае типа fxml - который будет открываться при вызове
         stage.setTitle("Welcome to the new brave World"); // заголовок
-        stage.setScene(new Scene(root,700,400));
+        Scene scene = new Scene(root,700,400);
+        stage.setScene(scene);
         stage.show(); // запуск окна
 
-        Connectors getCountries = new GetCountries("sb","POST");
-        getCountries.getConnection();
-        System.out.println(getCountries.getResponse());
+//        Connectors getCountries = new GetCountries("sb","POST");
+//        getCountries.getConnection();
+//        System.out.println(getCountries.getResponse());
     }
 
     public static void main(String[] args) {

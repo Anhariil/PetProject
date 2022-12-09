@@ -9,21 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="update connector, add Mapping">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="update connectors 2.0 , set base comment">
+      <change afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ParameterStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParameterStringBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/figure/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.19425288",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -228,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670441256512</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update connectors 2.0 , set base comment">
+      <created>1670609279899</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670609279899</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,7 +298,19 @@
     <MESSAGE value="test add rest connector, have problem, but dont find solution today, continue tomorrow" />
     <MESSAGE value="add rest connector, made package connector hierarchy" />
     <MESSAGE value="update connector, add Mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="update connector, add Mapping" />
+    <MESSAGE value="update connectors 2.0 , set base comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="update connectors 2.0 , set base comment" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Controllers/WelcomeController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

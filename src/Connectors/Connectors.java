@@ -103,9 +103,9 @@ public class Connectors {
      */
     public String getResponse() {
         if (this.responseCode > 299) {
-            return this.response.toString();
-        } else {
             return this.responseCode + " " + this.responseMessage.toString();
+        } else {
+            return this.response.toString();
         }
     }
 }
