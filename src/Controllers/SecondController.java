@@ -13,7 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class SecondController {
+public class SecondController extends Controllers{
 
     @FXML
     private ResourceBundle resources;
@@ -27,10 +27,14 @@ public class SecondController {
     @FXML
     private Label Label1;
 
-    public void openNewScene(String sceneName, ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource(sceneName));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.show();
+    @FXML
+    void initialize() {
+        Button1.setOnAction(actionEvent -> {
+            try {
+                openNewScene("/UI/Welcome.fxml", actionEvent);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 }

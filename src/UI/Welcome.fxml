@@ -86,7 +86,8 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Button fx:id="Button1" layoutX="14.0" layoutY="320.0" mnemonicParsing="false" text="Нажми на меня!" />
-            <Label fx:id="Label1" layoutX="14.0" layoutY="14.0" prefHeight="79.0" prefWidth="163.0" text="Some text" visible="false" />
+            <Label fx:id="Label1" layoutX="14.0" layoutY="14.0" prefHeight="79.0" prefWidth="163.0" text="Some text" visible="true" />
+            <Button fx:id="Button2" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" text="Нажми на меня!" />
       </children>
     </AnchorPane>
   </children>

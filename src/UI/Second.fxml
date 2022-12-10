@@ -85,8 +85,8 @@
                         <Font size="18.0" />
                     </font>
                 </Label>
-                <Button fx:id="Button1" layoutX="14.0" layoutY="320.0" mnemonicParsing="false"  text="Нажми на меня!" />
-                <Label fx:id="Label1" layoutX="14.0" layoutY="14.0" prefHeight="79.0" prefWidth="163.0" text="Some text" visible="false" />
+                <Button fx:id="Button1" layoutX="14.0" layoutY="320.0" mnemonicParsing="false"  text="Нажми на меня 2!" />
+                <Label fx:id="Label1" layoutX="14.0" layoutY="14.0" prefHeight="79.0" prefWidth="163.0" text="Some text on Scene 2" visible="true" />
             </children>
         </AnchorPane>
     </children>

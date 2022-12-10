@@ -9,14 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="update connectors 2.0 , set base comment">
-      <change afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="start work wth scene, had some error &#10;fix it later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670609279899</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="start work wth scene, had some error &#10;fix it later">
+      <created>1670617470495</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670617470495</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,18 +304,8 @@
     <MESSAGE value="add rest connector, made package connector hierarchy" />
     <MESSAGE value="update connector, add Mapping" />
     <MESSAGE value="update connectors 2.0 , set base comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="update connectors 2.0 , set base comment" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Controllers/WelcomeController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="start work wth scene, had some error &#10;fix it later" />
+    <option name="LAST_COMMIT_MESSAGE" value="start work wth scene, had some error &#10;fix it later" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

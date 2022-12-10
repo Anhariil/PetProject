@@ -11,12 +11,11 @@ import java.io.IOException;
 
 public class Controllers {
 
-    public void openNewScene(String sceneName, Stage stage1) throws IOException {
+    public void openNewScene(String sceneName, ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(sceneName));
-
-        //Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        Stage stage = stage1;
-        stage.setScene(new Scene(root));
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Scene old = (Scene) ((Node)event.getSource()).getScene();
+        stage.setScene(new Scene(root,old.getWidth(),old.getHeight()));
         stage.show();
     }
 }

@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -25,6 +27,10 @@ public class WelcomeController extends Controllers{
     private Button Button1;
 
     @FXML
+    private Button Button2;
+
+
+    @FXML
     private Label Label1;
 
     @FXML
@@ -37,12 +43,11 @@ public class WelcomeController extends Controllers{
          */
 
         Button1.setOnAction(actionEvent -> {
-//            Stage stageNow = (Stage) this.Button1.getScene().getWindow();
-//            try {
-//                openNewScene("/UI/Second.fxml",stageNow);
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
+            try {
+                openNewScene("/UI/Second.fxml",actionEvent);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
 
             if(Label1.getText().equals("Я родился)")) {
                 Label1.setText("Я умер(");
