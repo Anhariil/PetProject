@@ -25,6 +25,11 @@ public class Country{
         return this.name;
     }
 
+    public String getName(String alfaTwo){
+        return this.name;
+    }
+
+
     public String getNameBrief(){
         return this.nameBrief;
     }

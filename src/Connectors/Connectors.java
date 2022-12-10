@@ -108,4 +108,8 @@ public class Connectors {
             return this.response.toString();
         }
     }
+
+    public Mapping openResponse(){
+        return this.response;
+    }
 }

@@ -9,13 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="start work wth scene, had some error &#10;fix it later">
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="fix err wth scene and changing, can start on real functional">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
     "jdk.selected.JAVA_MODULE": "18",
     "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src",
     "last_opened_file_path": "D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.19425288",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -234,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670617470495</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix err wth scene and changing, can start on real functional">
+      <created>1670681180140</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670681180140</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +258,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="DROP-1-iteration-0" />
+                        <option value="DROP-8-get-info-from-stock-market" />
                       </list>
                     </value>
                   </entry>
@@ -305,7 +315,19 @@
     <MESSAGE value="update connector, add Mapping" />
     <MESSAGE value="update connectors 2.0 , set base comment" />
     <MESSAGE value="start work wth scene, had some error &#10;fix it later" />
-    <option name="LAST_COMMIT_MESSAGE" value="start work wth scene, had some error &#10;fix it later" />
+    <MESSAGE value="fix err wth scene and changing, can start on real functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix err wth scene and changing, can start on real functional" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Controllers/SecondController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

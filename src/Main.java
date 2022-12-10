@@ -16,10 +16,6 @@ public class Main extends Application {
         Scene scene = new Scene(root,700,400);
         stage.setScene(scene);
         stage.show(); // запуск окна
-
-//        Connectors getCountries = new GetCountries("sb","POST");
-//        getCountries.getConnection();
-//        System.out.println(getCountries.getResponse());
     }
 
     public static void main(String[] args) {

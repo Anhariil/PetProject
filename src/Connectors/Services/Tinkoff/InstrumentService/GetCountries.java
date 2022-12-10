@@ -13,6 +13,7 @@ import java.nio.charset.StandardCharsets;
 public class GetCountries extends InstrumentsService {
 
     private static final String method = "GetCountries";
+    protected GetCountriesResponseMap response;
 
     @Override
     public void setUrl(String type) {
@@ -31,5 +32,10 @@ public class GetCountries extends InstrumentsService {
     public void getConnection() throws IOException {
         super.getConnection();
         this.response = new GetCountriesResponseMap(this.jsonInputString);
+    }
+
+    @Override
+    public GetCountriesResponseMap openResponse(){
+        return this.response;
     }
 }
