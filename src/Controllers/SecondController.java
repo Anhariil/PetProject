@@ -38,7 +38,6 @@ public class SecondController extends Controllers {
     void initialize() throws IOException {
         GetCountries getCountries = new GetCountries("sb","POST");
         getCountries.getConnection();
-        //System.out.println(getCountries.getResponse());
         choiceBox1.getItems().addAll(getCountries.openResponse().getAllName());
 
         Button1.setOnAction(actionEvent -> {
