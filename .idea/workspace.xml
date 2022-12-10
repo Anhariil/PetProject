@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="fix err wth scene and changing, can start on real functional">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="start work with choiceBox (like dropbox early), thing about css and visual shit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670681180140</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="start work with choiceBox (like dropbox early), thing about css and visual shit">
+      <created>1670697693154</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670697693154</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,7 +313,8 @@
     <MESSAGE value="update connectors 2.0 , set base comment" />
     <MESSAGE value="start work wth scene, had some error &#10;fix it later" />
     <MESSAGE value="fix err wth scene and changing, can start on real functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix err wth scene and changing, can start on real functional" />
+    <MESSAGE value="start work with choiceBox (like dropbox early), thing about css and visual shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="start work with choiceBox (like dropbox early), thing about css and visual shit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
