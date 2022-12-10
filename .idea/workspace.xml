@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PetProject:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="add lib JavaFX, but its not working, search solution">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/MigLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-core-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-core-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FXApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="start work wth scene, had some error &#10;fix it later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PetProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PetProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/DisplayGraphics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/FXApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/FXAppScene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Visual/TestFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +43,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2HwYUBDtjO6o5XZLn7ioHk8LxSA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -66,15 +60,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "18",
     "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src",
-    "last_opened_file_path": "C:/Users/Митя/IdeaProjects/PetProgect/src/UI/Welcome.fxml",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.19425288",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Connectors.Data" />
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\fxml" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io\mo" />
@@ -83,23 +81,9 @@
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Visual.FXApp">
-    <configuration name="FXApp" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Visual.TestFrame" />
-      <module name="PetProject" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml " />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FXApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FXApp" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PetProject" />
       <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
@@ -113,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="TestProject" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="PetProject" />
+      <option name="MAIN_CLASS_NAME" value="Connectors.Tinkoff.InstrumentService.GetCountries" />
       <module name="PetProject" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,13 +105,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestProject" />
-      <item itemvalue="Application.Visual.FXApp" />
-      <item itemvalue="Application.FXApp" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Visual.FXApp" />
-        <item itemvalue="Application.FXApp" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +178,63 @@
       <option name="project" value="LOCAL" />
       <updated>1670072261878</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add lib JavaFX and its work! add some logic and fan">
+      <created>1670092584292</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670092584293</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test username">
+      <created>1670163608886</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670163608886</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test username">
+      <created>1670164092432</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670164092432</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test add rest connector, have problem, but dont find solution today, continue tomorrow">
+      <created>1670272737866</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670272737866</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add rest connector, made package connector hierarchy">
+      <created>1670357810669</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670357810669</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update connector, add Mapping">
+      <created>1670441256512</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670441256512</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update connectors 2.0 , set base comment">
+      <created>1670609279899</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670609279899</updated>
+    </task>
+    <task id="LOCAL-00016" summary="start work wth scene, had some error &#10;fix it later">
+      <created>1670617470495</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670617470495</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,6 +298,17 @@
     <MESSAGE value="add new figure and replace some code on true place" />
     <MESSAGE value="add grafic shits" />
     <MESSAGE value="add lib JavaFX, but its not working, search solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lib JavaFX, but its not working, search solution" />
+    <MESSAGE value="add lib JavaFX and its work! add some logic and fan" />
+    <MESSAGE value="test username" />
+    <MESSAGE value="test add rest connector, have problem, but dont find solution today, continue tomorrow" />
+    <MESSAGE value="add rest connector, made package connector hierarchy" />
+    <MESSAGE value="update connector, add Mapping" />
+    <MESSAGE value="update connectors 2.0 , set base comment" />
+    <MESSAGE value="start work wth scene, had some error &#10;fix it later" />
+    <option name="LAST_COMMIT_MESSAGE" value="start work wth scene, had some error &#10;fix it later" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
