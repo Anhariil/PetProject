@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -81,8 +79,12 @@ public class Connectors {
         this.headers.put("Authorization", "Bearer t.G0DB8pV9U4b3OCqqJ7nn0EUiZrcykNlT0X4i1jNOLGiNonUAXswIE0yIv2_5K_xLTb03_m3RhvKfd1UgZN2xVQ");
     }
 
-    public void setJsonInputString() {
-        this.jsonOutputString = "{}";
+    public void setJsonOutputString() {
+        this.jsonOutputString = "";
+    }
+
+    public void setJsonOutputString(String input) {
+        this.jsonOutputString = input;
     }
 
     public void setMethod(String method) {
@@ -99,6 +101,7 @@ public class Connectors {
     /**
      * If not 200 OK -- return error code and message
      * Else -- return response.toString()
+     *
      * @return code + " " + message
      */
     public String getResponse() {
@@ -109,7 +112,7 @@ public class Connectors {
         }
     }
 
-    public Mapping openResponse(){
+    public Mapping openResponse() {
         return this.response;
     }
 }

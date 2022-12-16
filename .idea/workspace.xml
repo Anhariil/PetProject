@@ -9,7 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="start work with choiceBox (like dropbox early), thing about css and visual shit" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 test">
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Instruments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/SharesResponseMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/UnitsNano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/GetCountriesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -30,10 +46,29 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -46,32 +81,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src",
-    "last_opened_file_path": "D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.19425288",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.19425288&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Connectors.Data" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\META-INF" />
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\fxml" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io\mo" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io" />
-      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src" />
-      <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -241,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670697693154</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="start work with choiceBox (like dropbox early), thing about css and visual shit">
+      <created>1670700501880</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670700501880</updated>
+    </task>
+    <task id="LOCAL-00020" summary="DROP-8 test">
+      <created>1670700579371</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670700579371</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,7 +367,8 @@
     <MESSAGE value="start work wth scene, had some error &#10;fix it later" />
     <MESSAGE value="fix err wth scene and changing, can start on real functional" />
     <MESSAGE value="start work with choiceBox (like dropbox early), thing about css and visual shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="start work with choiceBox (like dropbox early), thing about css and visual shit" />
+    <MESSAGE value="DROP-8 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,6 +377,11 @@
           <url>file://$PROJECT_DIR$/src/Controllers/SecondController.java</url>
           <line>39</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

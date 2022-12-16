@@ -1,11 +1,8 @@
 package Connectors.Services.Tinkoff.InstrumentService;
 
-import Connectors.Data.GetCountriesResponseMap;
+import Connectors.Data.Tinkoff.InsrumentService.GetCountries.GetCountriesResponseMap;
 
-import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
+import java.io.IOException;
 
 /**
  * Main Class to do smth
@@ -24,7 +21,7 @@ public class GetCountries extends InstrumentsService {
     public GetCountries(String urlType, String method) {
         setUrl(urlType);
         setHeaders();
-        setJsonInputString();
+        setJsonOutputString();
         setMethod(method);
     }
 
@@ -35,7 +32,7 @@ public class GetCountries extends InstrumentsService {
     }
 
     @Override
-    public GetCountriesResponseMap openResponse(){
+    public GetCountriesResponseMap openResponse() {
         return this.response;
     }
 }

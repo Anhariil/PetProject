@@ -1,13 +1,18 @@
-package Connectors.Data;
+package Connectors.Data.Tinkoff.InsrumentService.GetCountries;
 
-import java.util.Arrays;
+import Connectors.Data.Mapping;
 
 public class GetCountriesResponseMap extends Mapping {
     protected final Country[] countries;
 
+    /**
+     * Constructor, where we get arrays of Country from response string
+     *
+     * @param response - json string
+     */
     public GetCountriesResponseMap(String response) {
         String notParsedResponse = response; // general string wth response
-        String[] subSubStrings; // string wth
+        String[] subSubStrings; // string wth info about one country
         String alfaTwo;
         String alfaThree;
         String name;
