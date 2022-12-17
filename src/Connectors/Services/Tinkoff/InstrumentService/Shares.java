@@ -39,7 +39,6 @@ public class Shares extends InstrumentsService {
     public static void main() throws IOException {
         Shares test = new Shares("test", "POST");
         test.getConnection();
-        System.out.println(test.jsonInputString.toString());
     }
 
     @Override

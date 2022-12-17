@@ -12,17 +12,17 @@ public class GetCountries extends InstrumentsService {
     private static final String method = "GetCountries";
     protected GetCountriesResponseMap response;
 
-    @Override
-    public void setUrl(String type) {
-        super.setUrl(type);
-        this.URl += method;
-    }
-
     public GetCountries(String urlType, String method) {
         setUrl(urlType);
         setHeaders();
         setJsonOutputString();
         setMethod(method);
+    }
+
+    @Override
+    public void setUrl(String type) {
+        super.setUrl(type);
+        this.URl += method;
     }
 
     @Override

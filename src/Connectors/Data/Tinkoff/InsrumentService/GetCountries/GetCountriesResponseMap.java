@@ -65,9 +65,7 @@ public class GetCountriesResponseMap extends Mapping {
             }
         }
         String[] s = new String[j];
-        for (int i = 0; i < j; i++) {
-            s[i] = stringToReturn[i];
-        }
+        System.arraycopy(stringToReturn, 0, s, 0, j);
         return s;
     }
 

@@ -80,7 +80,7 @@ public class Connectors {
     }
 
     public void setJsonOutputString() {
-        this.jsonOutputString = "";
+        this.jsonOutputString = "{}";
     }
 
     public void setJsonOutputString(String input) {
@@ -106,7 +106,7 @@ public class Connectors {
      */
     public String getResponse() {
         if (this.responseCode > 299) {
-            return this.responseCode + " " + this.responseMessage.toString();
+            return this.responseCode + " " + this.responseMessage;
         } else {
             return this.response.toString();
         }
