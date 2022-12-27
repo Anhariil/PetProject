@@ -9,22 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add Data class to method Shares">
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/Instruments.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671214276703</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure">
+      <created>1671310950783</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671310950783</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +377,8 @@
     <MESSAGE value="start work with choiceBox (like dropbox early), thing about css and visual shit" />
     <MESSAGE value="DROP-8 test" />
     <MESSAGE value="DROP-8 add Data class to method Shares" />
-    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 add Data class to method Shares" />
+    <MESSAGE value="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -395,35 +393,15 @@
           <line>26</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java</url>
-          <line>31</line>
+          <line>42</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="29" />
+          <line>16</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
@@ -431,11 +409,15 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Connectors.Services.Tinkoff.InstrumentService.GetAssets" memberName="bufferedResponse" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="subStrings[642]" />
-        <watch expression="subStrings[678]" language="JAVA" />
-        <watch expression="subStrings[679]" language="JAVA" />
+        <watch expression="this" />
+        <watch expression="nowLine" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

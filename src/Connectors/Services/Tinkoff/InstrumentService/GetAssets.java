@@ -2,12 +2,13 @@ package Connectors.Services.Tinkoff.InstrumentService;
 
 import Connectors.Data.Tinkoff.InsrumentService.GetAssets.GetAssetsResponseMap;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 
 public class GetAssets extends InstrumentsService {
 
     private static final String method = "GetAssets";
-    protected GetAssetsResponseMap Response;
+    protected GetAssetsResponseMap response;
 
     public GetAssets(String urlType, String method) {
         setUrl(urlType);
@@ -25,7 +26,12 @@ public class GetAssets extends InstrumentsService {
     @Override
     public void getConnection() throws IOException {
         super.getConnection();
-        this.response = new GetAssetsResponseMap(this.jsonInputString);
+        //this.response = new GetAssetsResponseMap(this.bufferedResponse);
+    }
+
+    @Override
+    public void setResponse(BufferedReader bufferedReader) {
+        this.response = new GetAssetsResponseMap(bufferedReader);
     }
 
     public static void main() throws IOException {

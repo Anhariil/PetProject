@@ -21,6 +21,10 @@ public class Connectors {
     protected Mapping response;
     protected int responseCode;
     protected String responseMessage;
+    protected BufferedReader bufferedResponse;
+
+    private HttpURLConnection con;
+    private Class<? extends Mapping> response1;
 
     public Connectors() {
     }
@@ -56,13 +60,14 @@ public class Connectors {
 
         // записываем ответ
         try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
-            StringBuilder response = new StringBuilder();
-            String responseLine = null;
-            while ((responseLine = br.readLine()) != null) {
-                response.append(responseLine.trim());
-            }
-            this.jsonInputString = response.toString();
-            //System.out.println(this.jsonInputString); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
+            this.setResponse(br); // Call response parsers for everyone
+//            StringBuilder response = new StringBuilder();
+//            String responseLine = null;
+//            while ((responseLine = br.readLine()) != null) {
+//                response.append(responseLine.trim());
+//            }
+//            this.jsonInputString = response.toString();
+//            //System.out.println(this.jsonInputString); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
         }
 
         con.disconnect();
@@ -109,6 +114,22 @@ public class Connectors {
             return this.responseCode + " " + this.responseMessage;
         } else {
             return this.response.toString();
+        }
+    }
+
+//    public void setResponse(){
+//        try {
+//            this.response = new Mapping();
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
+
+    public void setResponse(BufferedReader bufferedReader) {
+        try {
+            this.response = new Mapping(bufferedReader);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
