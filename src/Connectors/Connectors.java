@@ -60,7 +60,7 @@ public class Connectors {
 
         // записываем ответ
         try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
-            this.setResponse(br); // Call response parsers for everyone
+            this.setResponse(br); // Call response parsers for everyone child class or set default
 //            StringBuilder response = new StringBuilder();
 //            String responseLine = null;
 //            while ((responseLine = br.readLine()) != null) {

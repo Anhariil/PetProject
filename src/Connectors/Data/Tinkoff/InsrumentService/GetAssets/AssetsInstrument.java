@@ -4,8 +4,8 @@ import Connectors.Data.Tinkoff.InsrumentService.Instrument;
 
 public class AssetsInstrument extends Instrument {
 
-    private String instrumentType;
-    private Link[] links;
+    private final String instrumentType;
+    private final Link[] links;
 
     public AssetsInstrument(String figi, String ticker, String classCode, String uid, String instrumentType, Link[] links) {
         super(figi, ticker, classCode, uid);

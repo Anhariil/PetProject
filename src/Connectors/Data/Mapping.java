@@ -15,7 +15,7 @@ public class Mapping {
             while ((responseLine = br.readLine()) != null) {
                 response.append(responseLine.trim());
             }
-            System.out.println(response.toString()); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
+            System.out.println(response); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
         }
     }
 

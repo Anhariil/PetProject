@@ -2,6 +2,7 @@ package Connectors.Services.Tinkoff.InstrumentService;
 
 import Connectors.Data.Tinkoff.InsrumentService.Shares.SharesResponseMap;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
@@ -28,7 +29,6 @@ public class Shares extends InstrumentsService {
     @Override
     public void getConnection() throws IOException {
         super.getConnection();
-        this.response = new SharesResponseMap(this.jsonInputString);
     }
 
     @Override
@@ -44,5 +44,10 @@ public class Shares extends InstrumentsService {
     @Override
     public void setJsonOutputString() {
         this.jsonOutputString = "{\"instrumentStatus\": \"INSTRUMENT_STATUS_UNSPECIFIED\"}";
+    }
+
+    @Override
+    public void setResponse(BufferedReader bufferedReader) {
+        this.response = new SharesResponseMap(bufferedReader);
     }
 }

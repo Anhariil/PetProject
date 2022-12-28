@@ -1,10 +1,10 @@
 package Connectors.Data.Tinkoff.InsrumentService.GetAssets;
 
 public class Asset {
-    private String uid;
-    private String type;
-    private String name;
-    private AssetsInstrument[] instruments;
+    private final String uid;
+    private final String type;
+    private final String name;
+    private final AssetsInstrument[] instruments;
 
     public Asset(String uid, String type, String name, AssetsInstrument[] instruments) {
         this.uid = uid;
