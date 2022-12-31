@@ -47,7 +47,7 @@ public class GetCountriesResponseMap extends Mapping {
      *
      * @return
      */
-    public int coutriesLength() {
+    public int countriesLength() {
         return this.countries.length;
     }
 
@@ -56,9 +56,9 @@ public class GetCountriesResponseMap extends Mapping {
     }
 
     public String[] getAllName() {
-        String[] stringToReturn = new String[this.coutriesLength()];
+        String[] stringToReturn = new String[this.countriesLength()];
         int j = 0;
-        for (int i = 0; i < this.coutriesLength(); i++) {
+        for (int i = 0; i < this.countriesLength(); i++) {
             if (this.getCountries()[i].getName().length() > 0) {
                 stringToReturn[j] = this.getCountries()[i].getName();
                 j++;
@@ -70,7 +70,7 @@ public class GetCountriesResponseMap extends Mapping {
     }
 
     public String getAlfaThree(String name) {
-        for (int i = 0; i < this.coutriesLength(); i++) {
+        for (int i = 0; i < this.countriesLength(); i++) {
             String nowName = this.countries[i].getName();
             if (nowName == name) {
                 return this.countries[i].getAlfaThree();

@@ -132,4 +132,8 @@ public class Instrument {
         this.first1minCandleDate = first1minCandleDate;
         this.first1dayCandleDate = first1dayCandleDate;
     }
+
+    public String getName() {
+        return this.name;
+    }
 }

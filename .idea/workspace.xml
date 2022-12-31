@@ -9,22 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add shares mapping, work wth errors">
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/MarketDataService.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add GetCandles int and response">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/UnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/Controllers/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/Controllers/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/UI/Second.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672262927997</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="DROP-8 add GetCandles int and response">
+      <created>1672475445662</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672475445662</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,20 +408,26 @@
     <MESSAGE value="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure" />
     <MESSAGE value="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets" />
     <MESSAGE value="DROP-8 add shares mapping, work wth errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 add shares mapping, work wth errors" />
+    <MESSAGE value="DROP-8 add GetCandles int and response" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 add GetCandles int and response" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/Controllers/SecondController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java</url>
           <line>238</line>
           <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UID/Controllers/Controllers.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UID/Controllers/SecondController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="196" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />

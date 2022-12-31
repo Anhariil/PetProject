@@ -1,21 +1,15 @@
-package Controllers;
+package UID.Controllers;
 //import UI.*;
-import javafx.event.ActionEvent;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.stage.Stage;
-
-public class WelcomeController extends Controllers{
+public class WelcomeController extends Controllers {
 
     @FXML
     private ResourceBundle resources;
@@ -44,15 +38,15 @@ public class WelcomeController extends Controllers{
 
         Button1.setOnAction(actionEvent -> {
             try {
-                openNewScene("/UI/Second.fxml",actionEvent);
+                openNewScene("/UID/UI/Second.fxml", actionEvent);
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("Error in Button1.setOnAction: " + e);
+                //throw new RuntimeException(e);
             }
 
-            if(Label1.getText().equals("Я родился)")) {
+            if (Label1.getText().equals("Я родился)")) {
                 Label1.setText("Я умер(");
-            }
-            else {
+            } else {
                 Label1.setText("Я родился)");
             }
 

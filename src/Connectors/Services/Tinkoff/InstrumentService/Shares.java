@@ -30,13 +30,18 @@ public class Shares extends InstrumentsService {
         setHeaders();
         setJsonOutputString("INSTRUMENT_STATUS_BASE");
         setMethod("POST");
+        try {
+            getConnection();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    // need this one?
-    @Override
-    public void getConnection() throws IOException {
-        super.getConnection();
-    }
+//    // need this one?
+//    @Override
+//    public void getConnection() throws IOException {
+//        super.getConnection();
+//    }
 
     @Override
     public void setUrl(String type) {

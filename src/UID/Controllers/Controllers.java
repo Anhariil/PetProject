@@ -1,4 +1,4 @@
-package Controllers;
+package UID.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +11,13 @@ import java.io.IOException;
 
 public class Controllers {
 
+    /**
+     * Open new scene on active window
+     *
+     * @param sceneName
+     * @param event
+     * @throws IOException
+     */
     public void openNewScene(String sceneName, ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(sceneName));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

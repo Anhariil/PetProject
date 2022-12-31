@@ -247,4 +247,21 @@ public class SharesResponseMap extends Mapping {
     public String toString() {
         return ""; // заглушка
     }
+
+    public Instrument getInstrumentByName(String name) { //TODO sql requests?
+        int index = 0;
+        while (true) {
+            if (this.instruments[index].getName().equalsIgnoreCase(name)) break;
+            index++;
+        }
+        return this.instruments[index];
+    }
+
+    public String[] getAllNames() {
+        String[] arrayOfNames = new String[this.instruments.length];
+        for (int i = 0; i < this.instruments.length; i++) {
+            arrayOfNames[i] = this.instruments[i].getName();
+        }
+        return arrayOfNames;
+    }
 }
