@@ -2,6 +2,7 @@ package Connectors.Data.Tinkoff.InsrumentService.Shares;
 
 import Connectors.Data.Mapping;
 import Connectors.Data.Tinkoff.InsrumentService.Instrument;
+import Connectors.Data.Tinkoff.InsrumentService.UnitsNano;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
@@ -12,12 +13,14 @@ public class SharesResponseMap extends Mapping {
     private Instrument[] instruments;
 
     /**
-     * wronge Api ?
+     *
      */
     public SharesResponseMap(BufferedReader bufferedReader) {
         boolean start = false;
         List<Instrument> instrumentList = new ArrayList<>();
         int index = 0; // index to arrayKD
+
+        //TODO HashMap to fewer fields?
 
         String figi = "";
         String ticker = "";
@@ -64,7 +67,7 @@ public class SharesResponseMap extends Mapping {
             String responseLine = null;
             while ((responseLine = br.readLine()) != null) {
                 String nowLine = responseLine.trim();
-                System.out.println(nowLine); // test now string
+                //System.out.println(nowLine); // test now string
 
                 if (nowLine.equalsIgnoreCase("\"instruments\": [{")) start = true;
                 if (nowLine.equalsIgnoreCase("}"))
@@ -119,13 +122,13 @@ public class SharesResponseMap extends Mapping {
                             exchange = nowLine.substring(13, nowLine.indexOf("\","));
                             break;
                         case 15: // may don't exist
-                            if (nowLine.indexOf(ipoDate) != -1) { // search page of klong
+                            if (nowLine.indexOf("ipoDate") != -1) { // search page of ipoDate
                                 ipoDate = nowLine.substring(12, nowLine.indexOf("\","));
+                                break;
                             } else {
                                 ipoDate = "";
                                 startId++; // go to 16
                             }
-                            break;
                         case 16:
                             issueSize = nowLine.substring(14, nowLine.indexOf("\","));
                             break;
@@ -228,19 +231,15 @@ public class SharesResponseMap extends Mapping {
                         startId = 0;
                         finalId = 47;
                         index = 0; // to new array
-                        if (instrumentList.size() == 7) {
-                            int t = 1; // search falling
-                        }
                     }
                 }
             }
             // after set all copy into primary
-//            this.assets = new Asset[assetList.size()];
-//            assetList.toArray(this.assets);
-//            assetList.removeAll(assetList);
-            //System.out.println(response.toString()); // test one
+            this.instruments = new Instrument[instrumentList.size()];
+            instrumentList.toArray(this.instruments);
+            instrumentList.removeAll(instrumentList);
         } catch (Exception e) {
-            System.out.println("Errors in \"GetAssetsResponseMap\" " + e);
+            System.out.println("Errors in \"GetAssetsResponseMap\", line: " + instrumentList.size() + "\n" + e);
         }
     }
 

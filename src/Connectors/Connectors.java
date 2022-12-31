@@ -76,7 +76,7 @@ public class Connectors {
     /**
      * Add two default headers -- <b>Content-Type</b> and <b>accept</b>
      */
-    public void setHeaders() {
+    protected void setHeaders() {
         this.headers.put("Content-Type", "application/json");
         this.headers.put("accept", "application/json");
 
@@ -84,15 +84,15 @@ public class Connectors {
         this.headers.put("Authorization", "Bearer t.G0DB8pV9U4b3OCqqJ7nn0EUiZrcykNlT0X4i1jNOLGiNonUAXswIE0yIv2_5K_xLTb03_m3RhvKfd1UgZN2xVQ");
     }
 
-    public void setJsonOutputString() {
+    protected void setJsonOutputString() {
         this.jsonOutputString = "{}";
     }
 
-    public void setJsonOutputString(String input) {
+    protected void setJsonOutputString(String input) {
         this.jsonOutputString = input;
     }
 
-    public void setMethod(String method) {
+    protected void setMethod(String method) {
         this.method = method;
     }
 
@@ -125,7 +125,7 @@ public class Connectors {
 //        }
 //    }
 
-    public void setResponse(BufferedReader bufferedReader) {
+    protected void setResponse(BufferedReader bufferedReader) {
         try {
             this.response = new Mapping(bufferedReader);
         } catch (IOException e) {

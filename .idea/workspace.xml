@@ -9,18 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets">
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add shares mapping, work wth errors">
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/MarketDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Connectors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/UnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/UnitsNano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/UnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,27 +84,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.19425288&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/Connectors/Services/Tinkoff",
+    "last_opened_file_path": "D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.19425288",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Connectors.Data.Tinkoff.MarketDataService.GetCandles" />
       <recent name="Connectors.Data.Tinkoff.InsrumentService.GetAssets" />
       <recent name="Connectors.Data" />
       <recent name="" />
@@ -316,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672175447885</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="DROP-8 add shares mapping, work wth errors">
+      <created>1672262927995</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672262927997</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +404,8 @@
     <MESSAGE value="DROP-8 add Data class to method Shares" />
     <MESSAGE value="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure" />
     <MESSAGE value="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets" />
-    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets" />
+    <MESSAGE value="DROP-8 add shares mapping, work wth errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 add shares mapping, work wth errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,6 +415,11 @@
           <line>39</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="18" />
@@ -411,6 +428,7 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="sun.net.www.protocol.https.DelegateHttpsURLConnection" memberName="responses" />
         <PinnedItemInfo parentTag="Connectors.Services.Tinkoff.InstrumentService.GetAssets" memberName="bufferedResponse" />
       </pinned-members>
     </pin-to-top-manager>

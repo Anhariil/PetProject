@@ -1,4 +1,4 @@
-package Connectors.Data.Tinkoff.InsrumentService.Shares;
+package Connectors.Data.Tinkoff.InsrumentService;
 
 public class UnitsNano {
     protected String units;
@@ -14,5 +14,13 @@ public class UnitsNano {
     public UnitsNano(String units, int nano) {
         this.units = units;
         this.nano = nano;
+    }
+
+    public String getUnits() {
+        return units;
+    }
+
+    public int getNano() {
+        return nano;
     }
 }

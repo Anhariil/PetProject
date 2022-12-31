@@ -1,7 +1,6 @@
 package Connectors.Data.Tinkoff.InsrumentService;
 
 import Connectors.Data.Tinkoff.InsrumentService.Shares.CurrencyUnitsNano;
-import Connectors.Data.Tinkoff.InsrumentService.Shares.UnitsNano;
 
 public class Instrument {
     protected String figi;
