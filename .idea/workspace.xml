@@ -9,18 +9,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add GetCandles int and response">
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add start work on UI, collect date and show it">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/ConnectorsThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/Controllers/Controllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/Controllers/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/UI/Second.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UID/UI/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Connectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetCountries/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/MarketDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/MarketDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/Tinkoff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParameterStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ParameterStringBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UID/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UID/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Figure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Figure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/figure/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +66,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -80,25 +116,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/Connectors/Services/Tinkoff",
-    "last_opened_file_path": "D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.19425288",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Митя/IdeaProjects/PetProgect/src/Connectors/Services/Tinkoff&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.19425288&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Connectors.Data.Tinkoff.MarketDataService.GetCandles" />
@@ -116,7 +152,7 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="PetProject" />
       <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
@@ -415,19 +451,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java</url>
-          <line>238</line>
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UID/Controllers/Controllers.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="194" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UID/Controllers/SecondController.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="196" />
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="204" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
@@ -444,7 +470,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="this" />
-        <watch expression="nowLine" language="JAVA" />
+        <watch expression="this.instruments[i].countryOfRisk" />
       </configuration>
     </watches-manager>
   </component>
