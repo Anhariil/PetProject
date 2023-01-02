@@ -2,6 +2,7 @@ package Main.Connectors.Data.Tinkoff.MarketDataService.GetCandles;
 
 import Main.Connectors.Data.Mapping;
 import Main.Connectors.Data.Tinkoff.InsrumentService.UnitsNano;
+import Main.DateTime;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class GetCandlesResponseMap extends Mapping {
         String units = "";
         int nano = -1;
         String volume = "";
-        String time = "";
+        DateTime time = null;
         boolean isComplete = false;
 
         int startId = 0;
@@ -29,7 +30,7 @@ public class GetCandlesResponseMap extends Mapping {
             String responseLine = null;
             while ((responseLine = br.readLine()) != null) {
                 String nowLine = responseLine.trim();
-                System.out.println(nowLine); // test now string
+                //System.out.println(nowLine); // test now string
 
                 if (nowLine.equalsIgnoreCase("\"candles\": [{"))
                     start = true;
@@ -52,7 +53,7 @@ public class GetCandlesResponseMap extends Mapping {
                             volume = nowLine.substring(11, nowLine.indexOf("\","));
                             break;
                         case 6:
-                            time = nowLine.substring(9, nowLine.indexOf("\","));
+                            time = new DateTime(nowLine.substring(9, nowLine.indexOf("\",")));
                             break;
                         case 7:
                             isComplete = nowLine.substring(14).equalsIgnoreCase("true");
@@ -68,11 +69,14 @@ public class GetCandlesResponseMap extends Mapping {
                 }
             }
             // after set all copy into primary
-//            this.instruments = new Instrument[instrumentList.size()];
-//            instrumentList.toArray(this.instruments);
-//            instrumentList.removeAll(instrumentList);
+            this.candles = new Candle[candlesList.size()];
+            candlesList.toArray(this.candles);
         } catch (Exception e) {
             System.out.println("Errors in \"GetCandlesResponseMap\", line: " + candlesList.size() + "\n" + e);
         }
+    }
+
+    public Candle[] getCandles() {
+        return candles;
     }
 }

@@ -1,6 +1,7 @@
 package Main.Connectors.Data.Tinkoff.MarketDataService.GetCandles;
 
 import Main.Connectors.Data.Tinkoff.InsrumentService.UnitsNano;
+import Main.DateTime;
 
 public class Candle {
     protected UnitsNano open;
@@ -8,10 +9,10 @@ public class Candle {
     protected UnitsNano low;
     protected UnitsNano close;
     protected String volume;
-    protected String time;
+    protected DateTime time;
     protected boolean isComplete;
 
-    public Candle(UnitsNano open, UnitsNano high, UnitsNano low, UnitsNano close, String volume, String time, boolean isComplete) {
+    public Candle(UnitsNano open, UnitsNano high, UnitsNano low, UnitsNano close, String volume, DateTime time, boolean isComplete) {
         this.open = open;
         this.high = high;
         this.low = low;
@@ -41,7 +42,7 @@ public class Candle {
         return volume;
     }
 
-    public String getTime() {
+    public DateTime getTime() {
         return time;
     }
 

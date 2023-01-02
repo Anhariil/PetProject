@@ -9,53 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 add start work on UI, collect date and show it">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/ConnectorsThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PetProject_jar.xml" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 start work wth thread">
+      <change afterPath="$PROJECT_DIR$/src/Main/DateTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Connectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Mapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/AssetsInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/GetAssetsResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetAssets/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetCountries/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/GetCountries/GetCountriesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/CurrencyUnitsNano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/GetAssets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/GetCountries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/InstrumentsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/MarketDataService/MarketDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/MarketDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Connectors/Services/Tinkoff/Tinkoff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/Tinkoff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ParameterStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ParameterStringBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UID/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UID/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Welcome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Figure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Figure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/figure/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/figure/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/Candle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672475445662</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="DROP-8 start work wth thread">
+      <created>1672606112129</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672606112129</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,20 +416,26 @@
     <MESSAGE value="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets" />
     <MESSAGE value="DROP-8 add shares mapping, work wth errors" />
     <MESSAGE value="DROP-8 add GetCandles int and response" />
-    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 add GetCandles int and response" />
+    <MESSAGE value="DROP-8 start work wth thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 start work wth thread" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="18" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

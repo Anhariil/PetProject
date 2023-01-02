@@ -245,7 +245,10 @@ public class SharesResponseMap extends Mapping {
 
     @Override
     public String toString() {
-        return ""; // заглушка
+        if (this.instruments != null)
+            return "has value";
+        else
+            return "empty";
     }
 
     public Instrument getInstrumentByName(String name) { //TODO sql requests?

@@ -140,4 +140,8 @@ public class Instrument {
     public String getCountryOfRisk() {
         return countryOfRisk;
     }
+
+    public String getFigi() {
+        return figi;
+    }
 }

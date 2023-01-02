@@ -67,6 +67,11 @@ public class Shares extends InstrumentsService {
         this.response = new SharesResponseMap(bufferedReader);
     }
 
+    @Override
+    public String toString() {
+        return "Share api, response: " + this.response.toString();
+    }
+
     public static void main() throws IOException {
         Shares test = new Shares("test", "POST", "INSTRUMENT_STATUS_BASE");
         test.getConnection();

@@ -1,5 +1,6 @@
 package Main.Connectors.Services.Tinkoff.MarketDataService;
 
+import Main.Connectors.Data.Mapping;
 import Main.Connectors.Data.Tinkoff.MarketDataService.GetCandles.GetCandlesResponseMap;
 
 import java.io.BufferedReader;
@@ -10,10 +11,43 @@ public class GetCandles extends MarketDataService {
     private static final String method = "GetCandles";
     protected GetCandlesResponseMap response;
 
-    public GetCandles(String url, String method, String figi, String from, String to, String interval) {
+    /**
+     * for intervals CANDLE_INTERVAL_1_MIN, CANDLE_INTERVAL_5_MIN, CANDLE_INTERVAL_15_MIN - maximum period is a day
+     * <p>
+     * CANDLE_INTERVAL_HOUR - maximum period is a week
+     * <p>
+     * CANDLE_INTERVAL_DAY - maximum period is a year
+     * <p>
+     * if u need more candles, should do few requests
+     *
+     * @param url      test or prod
+     * @param method   POST
+     * @param figi
+     * @param from
+     * @param to
+     * @param interval 0 - CANDLE_INTERVAL_UNSPECIFIED, 1 - CANDLE_INTERVAL_1_MIN, 5 - CANDLE_INTERVAL_5_MIN,
+     *                 15 - CANDLE_INTERVAL_15_MIN, 60 - CANDLE_INTERVAL_HOUR, 24 - CANDLE_INTERVAL_DAY
+     */
+    public GetCandles(String url, String method, String figi, String from, String to, int interval) {
         setUrl(url);
         setHeaders();
-        setJsonOutputString(figi, from, to, interval);
+        int i = 0;
+        String[] inter = {"CANDLE_INTERVAL_UNSPECIFIED", "CANDLE_INTERVAL_1_MIN", "CANDLE_INTERVAL_5_MIN", "CANDLE_INTERVAL_15_MIN", "CANDLE_INTERVAL_HOUR", "CANDLE_INTERVAL_DAY"};
+        switch (interval) {
+            case 5:
+                i = 2;
+                break;
+            case 15:
+                i = 3;
+                break;
+            case 60:
+                i = 4;
+                break;
+            case 24:
+                i = 5;
+                break;
+        }
+        setJsonOutputString(figi, from, to, inter[i]);
         setMethod(method);
     }
 
@@ -23,12 +57,6 @@ public class GetCandles extends MarketDataService {
         setJsonOutputString();
         setMethod("POST");
     }
-
-    // need this one?
-//    @Override
-//    public void getConnection() throws IOException {
-//        super.getConnection();
-//    }
 
     @Override
     protected void setUrl(String type) {
@@ -40,16 +68,6 @@ public class GetCandles extends MarketDataService {
     public GetCandlesResponseMap openResponse() {
         return this.response;
     }
-
-//    private HashMap<String, String> setResponseHashMap(String figi, String from, String to, String interval) {
-//        HashMap<String, String> request = new HashMap<String, String>();
-//        request.put("instrumentId", figi);
-//        request.put("interval", interval);
-//        request.put("to", to);
-//        request.put("from", from);
-//        request.put("figi", figi);
-//        return request;
-//    }
 
     /**
      * default request for test positive response
@@ -73,7 +91,7 @@ public class GetCandles extends MarketDataService {
     protected void setResponse(BufferedReader bufferedReader) {
         if (this.responseCode > 299) {
             try {
-                this.response.LogErrorResponse(bufferedReader);
+                Mapping.LogErrorResponse(bufferedReader);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
