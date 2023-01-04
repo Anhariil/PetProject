@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-18 add DB connection, work wth parser">
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-18 fix DB connection, work wth collect data">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Configs/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Configs/InstrumentConst.java" afterDir="false" />
@@ -342,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672690446901</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="DROP-18 fix DB connection, work wth collect data">
+      <created>1672864238592</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672864238592</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,7 +430,8 @@
     <MESSAGE value="DROP-8 add GetCandles int and response" />
     <MESSAGE value="DROP-8 start work wth thread" />
     <MESSAGE value="DROP-8 start work wth linechart" />
-    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 start work wth linechart" />
+    <MESSAGE value="DROP-18 fix DB connection, work wth collect data" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-18 fix DB connection, work wth collect data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
