@@ -141,7 +141,15 @@ public class Instrument {
         return countryOfRisk;
     }
 
+    public String getCountryOfRiskName() {
+        return countryOfRiskName;
+    }
+
     public String getFigi() {
         return figi;
+    }
+
+    public String getSector() {
+        return sector;
     }
 }

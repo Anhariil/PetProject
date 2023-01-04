@@ -279,4 +279,12 @@ public class SharesResponseMap extends Mapping {
         listOfNames.toArray(arrayOfNames);
         return arrayOfNames;
     }
+
+    public Instrument getInstrument(int id) {
+        return this.instruments[id];
+    }
+
+    public Instrument[] getInstruments() {
+        return this.instruments;
+    }
 }

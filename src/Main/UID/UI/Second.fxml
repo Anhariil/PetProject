@@ -89,7 +89,7 @@
         </MenuBar>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
-                <Button fx:id="Button1" layoutX="14.0" layoutY="320.0" mnemonicParsing="false" text="Нажми на меня 2!" />
+                <Button fx:id="Button1" layoutX="14.0" layoutY="320.0" mnemonicParsing="false" text="Вернуться на главный экран " />
                 <Label fx:id="Label1" layoutX="194.0" layoutY="34.0" maxHeight="1.7976931348623157E308" prefHeight="27.0" prefWidth="171.0" text="График с данными по акции" visible="true" />
                 <ChoiceBox fx:id="choiceBox1" accessibleHelp="Here u can choose a country for ???" accessibleText="Choose smth" layoutX="14.0" layoutY="35.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" />
             <LineChart fx:id="LineChart1" layoutX="14.0" layoutY="80.0" prefHeight="214.0" prefWidth="344.0">

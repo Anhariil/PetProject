@@ -76,6 +76,14 @@ public class GetCandlesResponseMap extends Mapping {
         }
     }
 
+    @Override
+    public String toString() {
+        if (this.candles != null)
+            return "has value";
+        else
+            return "empty";
+    }
+
     public Candle[] getCandles() {
         return candles;
     }

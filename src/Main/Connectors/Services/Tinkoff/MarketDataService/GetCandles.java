@@ -65,6 +65,11 @@ public class GetCandles extends MarketDataService {
     }
 
     @Override
+    public String toString() {
+        return "GetCandles response + " + this.response.toString();
+    }
+
+    @Override
     public GetCandlesResponseMap openResponse() {
         return this.response;
     }
