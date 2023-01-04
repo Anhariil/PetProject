@@ -9,13 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="start work wth scene, had some error &#10;fix it later">
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-8 start work wth linechart">
+      <change afterPath="$PROJECT_DIR$/src/Main/Configs/Configs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Configs/Const.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Controllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/WelcomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Second.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PetProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +31,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -37,13 +46,32 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HwYUBDtjO6o5XZLn7ioHk8LxSA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -55,35 +83,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/io/Figure/src",
-    "last_opened_file_path": "D:/JavaLib/javafx-sdk-19/bin/vcruntime140_1.dll",
-    "project.structure.last.edited": "Project",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_directory_selection": "C:/Users/Митя/IdeaProjects/PetProgect/src/Connectors/Services/Tinkoff",
+    "last_opened_file_path": "C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-j-8.0.31.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.19425288",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Connectors.Data.Tinkoff.MarketDataService.GetCandles" />
+      <recent name="Connectors.Data.Tinkoff.InsrumentService.GetAssets" />
       <recent name="Connectors.Data" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\META-INF" />
+      <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\fxml" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io\mo" />
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io" />
-      <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src" />
-      <recent name="C:\Users\Митя\IdeaProjects\PetProgect" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="PetProject" />
       <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
@@ -234,7 +268,84 @@
       <option name="project" value="LOCAL" />
       <updated>1670617470495</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix err wth scene and changing, can start on real functional">
+      <created>1670681180140</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670681180140</updated>
+    </task>
+    <task id="LOCAL-00018" summary="start work with choiceBox (like dropbox early), thing about css and visual shit">
+      <created>1670697693154</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670697693154</updated>
+    </task>
+    <task id="LOCAL-00019" summary="start work with choiceBox (like dropbox early), thing about css and visual shit">
+      <created>1670700501880</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670700501880</updated>
+    </task>
+    <task id="LOCAL-00020" summary="DROP-8 test">
+      <created>1670700579371</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670700579371</updated>
+    </task>
+    <task id="LOCAL-00021" summary="DROP-8 add Data class to method Shares">
+      <created>1671214276703</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1671214276703</updated>
+    </task>
+    <task id="LOCAL-00022" summary="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure">
+      <created>1671310950783</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671310950783</updated>
+    </task>
+    <task id="LOCAL-00023" summary="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets">
+      <created>1672175447884</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672175447885</updated>
+    </task>
+    <task id="LOCAL-00024" summary="DROP-8 add shares mapping, work wth errors">
+      <created>1672262927995</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672262927997</updated>
+    </task>
+    <task id="LOCAL-00025" summary="DROP-8 add GetCandles int and response">
+      <created>1672475445662</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672475445662</updated>
+    </task>
+    <task id="LOCAL-00026" summary="DROP-8 start work wth thread">
+      <created>1672606112129</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672606112129</updated>
+    </task>
+    <task id="LOCAL-00027" summary="DROP-8 start work wth linechart">
+      <created>1672690446901</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1672690446901</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +359,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="DROP-1-iteration-0" />
+                        <option value="DROP-8-get-info-from-stock-market" />
                       </list>
                     </value>
                   </entry>
@@ -305,7 +416,54 @@
     <MESSAGE value="update connector, add Mapping" />
     <MESSAGE value="update connectors 2.0 , set base comment" />
     <MESSAGE value="start work wth scene, had some error &#10;fix it later" />
-    <option name="LAST_COMMIT_MESSAGE" value="start work wth scene, had some error &#10;fix it later" />
+    <MESSAGE value="fix err wth scene and changing, can start on real functional" />
+    <MESSAGE value="start work with choiceBox (like dropbox early), thing about css and visual shit" />
+    <MESSAGE value="DROP-8 test" />
+    <MESSAGE value="DROP-8 add Data class to method Shares" />
+    <MESSAGE value="DROP-8 add new connector and maping, test it, have some problems wth structure inside structure" />
+    <MESSAGE value="DROP-8 change connectors logic, add correct (need test to check) mapping to GetAssets" />
+    <MESSAGE value="DROP-8 add shares mapping, work wth errors" />
+    <MESSAGE value="DROP-8 add GetCandles int and response" />
+    <MESSAGE value="DROP-8 start work wth thread" />
+    <MESSAGE value="DROP-8 start work wth linechart" />
+    <option name="LAST_COMMIT_MESSAGE" value="DROP-8 start work wth linechart" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="18" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="sun.net.www.protocol.https.DelegateHttpsURLConnection" memberName="responses" />
+        <PinnedItemInfo parentTag="Connectors.Services.Tinkoff.InstrumentService.GetAssets" memberName="bufferedResponse" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+        <watch expression="this.instruments[i].countryOfRisk" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
