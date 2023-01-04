@@ -227,7 +227,12 @@ public class SharesResponseMap extends Mapping {
                     }
                     startId++;
                     if (startId >= finalId) {
-                        instrumentList.add(new Instrument(figi, ticker, classCode, isin, lot, currency, arrayKD[0], arrayKD[1], arrayKD[2], arrayKD[3], arrayKD[4], arrayKD[5], shortEnabledFlag, name, exchange, issueSize, countryOfRisk, countryOfRiskName, sector, issueSizePlan, nominal, tradingStatus, otcFlag, buyAvailableFlag, sellAvailableFlag, divYieldFlag, shareType, minPriceIncrement, apiTradeAvailable, uid, realExchange, positionUid, forIisFlag, forQualInvestorFlag, weekendFlag, blockedTcaFlag, first1minCandleDate, first1dayCandleDate));
+                        instrumentList.add(new Instrument(figi, ticker, classCode, isin, lot, currency, arrayKD[0],
+                                arrayKD[1], arrayKD[2], arrayKD[3], arrayKD[4], arrayKD[5], shortEnabledFlag, name,
+                                exchange, ipoDate, issueSize, countryOfRisk, countryOfRiskName, sector, issueSizePlan, nominal,
+                                tradingStatus, otcFlag, buyAvailableFlag, sellAvailableFlag, divYieldFlag, shareType,
+                                minPriceIncrement, apiTradeAvailable, uid, realExchange, positionUid, forIisFlag,
+                                forQualInvestorFlag, weekendFlag, blockedTcaFlag, first1minCandleDate, first1dayCandleDate));
                         startId = 0;
                         finalId = 47;
                         index = 0; // to new array

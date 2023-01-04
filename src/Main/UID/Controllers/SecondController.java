@@ -1,10 +1,8 @@
 package Main.UID.Controllers;
 
 import Main.Configs.DatabaseHandler;
-import Main.Connectors.ConnectorsThread;
 import Main.Connectors.Data.Tinkoff.InsrumentService.Instrument;
 import Main.Connectors.Data.Tinkoff.MarketDataService.GetCandles.Candle;
-import Main.Connectors.Services.Tinkoff.InstrumentService.Shares;
 import Main.Connectors.Services.Tinkoff.MarketDataService.GetCandles;
 import Main.DateTime;
 import javafx.fxml.FXML;
@@ -48,20 +46,16 @@ public class SecondController extends Controllers {
     @FXML
     void initialize() throws IOException, InterruptedException {
 
-        Shares share = new Shares(); //TODO do it like a global variable (in main class?) or take it from DB
-        ConnectorsThread thread = new ConnectorsThread(share);
-        thread.start();
-        thread.join(); // wait until thread stop working
+//        Shares share = new Shares(); //TODO do it like a global variable (in main class?) or take it from DB
+//        ConnectorsThread thread = new ConnectorsThread(share);
+//        thread.start();
+//        thread.join(); // wait until thread stop working
 
-//
-//        DatabaseHandler dbHandler = new DatabaseHandler(); // create to connection
-//        try {
-//            Instrument[] instruments = share.openResponse().getInstruments();
-//            for (Instrument i : instruments)
-//                dbHandler.saveShares(i); // try to save all instruments
-//        } catch (ClassNotFoundException e) {
-//            System.out.println("Smth go wrong");
-//        }
+
+        DatabaseHandler dbHandler = new DatabaseHandler(); // create to connection
+
+//        Instrument[] instruments = share.openResponse().getInstruments();
+//        dbHandler.updateInstruments(instruments); // try to save all instruments
 
 //        while (thread.isAlive()) {
 //            try {
@@ -70,8 +64,6 @@ public class SecondController extends Controllers {
 //            }
 //            System.out.println("share connection still going");
 //        }
-
-        DatabaseHandler dbHandler = new DatabaseHandler(); // create to connection
 
         try {
             choiceBox1.getItems().addAll(dbHandler.getNamesByCountryOfRisk("RU"));
@@ -91,7 +83,7 @@ public class SecondController extends Controllers {
 
         choiceBox1.setOnAction(actionEvent -> {
             choiceBox1.setValue(choiceBox1.getValue());
-            Instrument instrument = share.openResponse().getInstrumentByName(choiceBox1.getValue()); // take instrument by name // TODO SQL request ?
+            Instrument instrument = null;//share.openResponse().getInstrumentByName(choiceBox1.getValue()); // take instrument by name // TODO SQL request ?
             String figi = ""; // TODO fix it
             LocalDateTime dateTime = LocalDateTime.now();
             DateTime to = new DateTime(dateTime);

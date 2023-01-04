@@ -18,6 +18,7 @@ public class Instrument {
     protected boolean shortEnabledFlag;
     protected String name;
     protected String exchange;
+    protected String ipoDate;
     protected String issueSize;
     protected String countryOfRisk;
     protected String countryOfRiskName;
@@ -92,7 +93,14 @@ public class Instrument {
      * @param first1minCandleDate
      * @param first1dayCandleDate
      */
-    public Instrument(String figi, String ticker, String classCode, String isin, int lot, String currency, UnitsNano klong, UnitsNano kshort, UnitsNano dlong, UnitsNano dshort, UnitsNano dlongMin, UnitsNano dshortMin, boolean shortEnabledFlag, String name, String exchange, String issueSize, String countryOfRisk, String countryOfRiskName, String sector, String issueSizePlan, CurrencyUnitsNano nominal, String tradingStatus, boolean otcFlag, boolean buyAvailableFlag, boolean sellAvailableFlag, boolean divYieldFlag, String shareType, UnitsNano minPriceIncrement, boolean apiTradeAvailable, String uid, String realExchange, String positionUid, boolean forIisFlag, boolean forQualInvestorFlag, boolean weekendFlag, boolean blockedTcaFlag, String first1minCandleDate, String first1dayCandleDate) {
+    public Instrument(String figi, String ticker, String classCode, String isin, int lot, String currency, UnitsNano klong,
+                      UnitsNano kshort, UnitsNano dlong, UnitsNano dshort, UnitsNano dlongMin, UnitsNano dshortMin,
+                      boolean shortEnabledFlag, String name, String exchange, String ipoDate, String issueSize, String countryOfRisk,
+                      String countryOfRiskName, String sector, String issueSizePlan, CurrencyUnitsNano nominal,
+                      String tradingStatus, boolean otcFlag, boolean buyAvailableFlag, boolean sellAvailableFlag,
+                      boolean divYieldFlag, String shareType, UnitsNano minPriceIncrement, boolean apiTradeAvailable,
+                      String uid, String realExchange, String positionUid, boolean forIisFlag, boolean forQualInvestorFlag,
+                      boolean weekendFlag, boolean blockedTcaFlag, String first1minCandleDate, String first1dayCandleDate) {
         this.figi = figi;
         this.ticker = ticker;
         this.classCode = classCode;
@@ -108,6 +116,7 @@ public class Instrument {
         this.shortEnabledFlag = shortEnabledFlag;
         this.name = name;
         this.exchange = exchange;
+        this.ipoDate = ipoDate;
         this.issueSize = issueSize;
         this.countryOfRisk = countryOfRisk;
         this.countryOfRiskName = countryOfRiskName;
@@ -147,6 +156,143 @@ public class Instrument {
 
     public String getFigi() {
         return figi;
+    }
+
+    public String getTicker() {
+        return ticker;
+    }
+
+    public String getClassCode() {
+        return classCode;
+    }
+
+    public String getIsin() {
+        return isin;
+    }
+
+    public int getLot() {
+        return lot;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public UnitsNano getKlong() {
+        return klong;
+    }
+
+    public UnitsNano getKshort() {
+        return kshort;
+    }
+
+    public UnitsNano getDlong() {
+        return dlong;
+    }
+
+    public UnitsNano getDshort() {
+        return dshort;
+    }
+
+    public UnitsNano getDlongMin() {
+        return dlongMin;
+    }
+
+    public UnitsNano getDshortMin() {
+        return dshortMin;
+    }
+
+    public boolean isShortEnabledFlag() {
+        return shortEnabledFlag;
+    }
+
+    public String getExchange() {
+        return exchange;
+    }
+
+    public String getIpoDate() {
+        return ipoDate;
+    }
+
+
+    public String getIssueSize() {
+        return issueSize;
+    }
+
+    public String getIssueSizePlan() {
+        return issueSizePlan;
+    }
+
+    public CurrencyUnitsNano getNominal() {
+        return nominal;
+    }
+
+    public String getTradingStatus() {
+        return tradingStatus;
+    }
+
+    public boolean isOtcFlag() {
+        return otcFlag;
+    }
+
+    public boolean isBuyAvailableFlag() {
+        return buyAvailableFlag;
+    }
+
+    public boolean isSellAvailableFlag() {
+        return sellAvailableFlag;
+    }
+
+    public boolean isDivYieldFlag() {
+        return divYieldFlag;
+    }
+
+    public String getShareType() {
+        return shareType;
+    }
+
+    public UnitsNano getMinPriceIncrement() {
+        return minPriceIncrement;
+    }
+
+    public boolean isApiTradeAvailable() {
+        return apiTradeAvailable;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public String getRealExchange() {
+        return realExchange;
+    }
+
+    public String getPositionUid() {
+        return positionUid;
+    }
+
+    public boolean isForIisFlag() {
+        return forIisFlag;
+    }
+
+    public boolean isForQualInvestorFlag() {
+        return forQualInvestorFlag;
+    }
+
+    public boolean isWeekendFlag() {
+        return weekendFlag;
+    }
+
+    public boolean isBlockedTcaFlag() {
+        return blockedTcaFlag;
+    }
+
+    public String getFirst1minCandleDate() {
+        return first1minCandleDate;
+    }
+
+    public String getFirst1dayCandleDate() {
+        return first1dayCandleDate;
     }
 
     public String getSector() {
