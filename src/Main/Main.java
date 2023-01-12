@@ -8,6 +8,10 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
 
@@ -19,9 +23,4 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show(); // запуск окна
     }
-
-    public static void main(String[] args) {
-        Application.launch(args);
-    }
-
 }

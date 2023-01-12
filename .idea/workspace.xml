@@ -10,13 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-18 fix DB connection, work wth collect data">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/ModalWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Configs/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Configs/InstrumentConst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Instrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/Shares/SharesResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672864238592</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="DROP-18 fix DB connection, work wth collect data">
+      <created>1672864910970</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672864910970</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,7 +372,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="DROP-8-get-info-from-stock-market" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>

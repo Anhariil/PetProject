@@ -142,4 +142,29 @@ public class DatabaseHandler extends Configs {
 
         return resultString;
     }
+
+    public String getFigiByName(String name) {
+        ResultSet rs = null;
+        String resultString = null;
+
+        String select = "SELECT " + InstrumentConst.SHARE_FIGI + " FROM " + InstrumentConst.SHARE_TABLE + " WHERE "
+                + InstrumentConst.SHARE_NAME + "=?";
+        try {
+            PreparedStatement prSt = getDbConnection().prepareStatement(select); // set our request
+            prSt.setString(1, name);
+            rs = prSt.executeQuery(); // to get info from DB
+        } catch (SQLException | ClassNotFoundException e) {
+            System.out.println("Error in getFigiByName: " + e);
+        }
+
+        try {
+            while (rs.next()) { // for each string
+                resultString = rs.getString(1); // we take first string in line, cos it's our param
+            }
+        } catch (SQLException e) {
+            System.out.println("Error in getNamesByCountryOfRisk: " + e);
+        }
+
+        return resultString;
+    }
 }

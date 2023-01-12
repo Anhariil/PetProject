@@ -18,11 +18,18 @@ public class Controllers {
      * @param event
      * @throws IOException
      */
-    public void openNewScene(String sceneName, ActionEvent event) throws IOException {
+    public void changeScene(String sceneName, ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(sceneName));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene old = ((Node) event.getSource()).getScene();
         stage.setScene(new Scene(root, old.getWidth(), old.getHeight()));
         stage.show();
     }
+
+    public void openNewScene(Scene sceneName) throws IOException {
+        Stage stage1 = new Stage();
+        stage1.setScene(sceneName);
+        stage1.show();
+    }
+
 }

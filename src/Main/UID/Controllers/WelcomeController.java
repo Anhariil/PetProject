@@ -37,7 +37,7 @@ public class WelcomeController extends Controllers {
          */
         Button1.setOnAction(actionEvent -> {
             try {
-                openNewScene("/Main/UID/UI/Second.fxml", actionEvent);
+                changeScene("/Main/UID/UI/Second.fxml", actionEvent);
             } catch (IOException e) {
                 System.out.println("Error in Button1.setOnAction: " + e);
                 //throw new RuntimeException(e);
