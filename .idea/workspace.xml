@@ -9,16 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="DROP-18 fix DB connection, work wth collect data">
-      <change afterPath="$PROJECT_DIR$/src/Main/ModalWindow.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-20 add modal window wth candles graph">
+      <change afterPath="$PROJECT_DIR$/src/Main/UID/AssetTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ModalWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ModalWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ParameterStringBuilder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Welcome.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +102,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Main.UID" />
       <recent name="Connectors.Data.Tinkoff.MarketDataService.GetCandles" />
       <recent name="Connectors.Data.Tinkoff.InsrumentService.GetAssets" />
       <recent name="Connectors.Data" />
@@ -358,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672864910970</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="INV-20 add modal window wth candles graph">
+      <created>1673543755185</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673543755185</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start project" />
     <MESSAGE value="minor fix" />
     <MESSAGE value="Create base param and func to figure" />
     <MESSAGE value="Add and understand package" />
@@ -440,7 +448,8 @@
     <MESSAGE value="DROP-8 start work wth thread" />
     <MESSAGE value="DROP-8 start work wth linechart" />
     <MESSAGE value="DROP-18 fix DB connection, work wth collect data" />
-    <option name="LAST_COMMIT_MESSAGE" value="DROP-18 fix DB connection, work wth collect data" />
+    <MESSAGE value="INV-20 add modal window wth candles graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="INV-20 add modal window wth candles graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,6 +458,11 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="18" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>

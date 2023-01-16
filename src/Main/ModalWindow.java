@@ -7,8 +7,10 @@ import javafx.stage.Stage;
 public class ModalWindow {
     public static void openModalWindow(Scene scene) {
         Stage window = new Stage();
-        window.initModality(Modality.APPLICATION_MODAL);
+        window.initModality(Modality.WINDOW_MODAL);
         window.setScene(scene);
-        window.showAndWait();
+        window.show();
+        window.setOnCloseRequest(windowEvent -> {
+        });
     }
 }

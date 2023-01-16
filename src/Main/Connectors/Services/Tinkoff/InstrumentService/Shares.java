@@ -44,7 +44,7 @@ public class Shares extends InstrumentsService {
     @Override
     public void setUrl(String type) {
         super.setUrl(type);
-        this.URl += this.method;
+        this.URl += method;
     }
 
     @Override

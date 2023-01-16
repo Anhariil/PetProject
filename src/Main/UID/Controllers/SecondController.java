@@ -1,27 +1,21 @@
 package Main.UID.Controllers;
 
 import Main.Configs.DatabaseHandler;
-import Main.Connectors.Data.Tinkoff.MarketDataService.GetCandles.Candle;
 import Main.Connectors.Services.Tinkoff.MarketDataService.GetCandles;
 import Main.DateTime;
-import Main.ModalWindow;
-import javafx.application.Platform;
+import Main.UID.AssetTab;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
-import javafx.scene.chart.AreaChart;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.ResourceBundle;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 
 public class SecondController extends Controllers {
 
@@ -40,6 +34,9 @@ public class SecondController extends Controllers {
     private Label Label1;
 
     @FXML
+    private TabPane TabPane1;
+
+    @FXML
     private ChoiceBox<String> choiceBox1;
 
     /**
@@ -49,13 +46,10 @@ public class SecondController extends Controllers {
     private LineChart<Number, Number> LineChart1; //TODO fix type ?
 
     @FXML
-    private AreaChart<Number, Number> AreaChart1;
-
-    @FXML
     void initialize() throws IOException, InterruptedException {
 
-        XYChart.Series<Number, Number> series = new XYChart.Series<>(); // create series to save info about now share
-        series.setName("Work bitch");
+//        XYChart.Series<Number, Number> series = new XYChart.Series<>(); // create series to save info about now share
+//        series.setName("Work bitch");
 
 //        Shares share = new Shares(); //TODO do it like a global variable (in main class?) or take it from DB
 //        ConnectorsThread thread = new ConnectorsThread(share);
@@ -76,11 +70,7 @@ public class SecondController extends Controllers {
 //            System.out.println("share connection still going");
 //        }
 
-        try {
-            choiceBox1.getItems().addAll(dbHandler.getNamesByCountryOfRisk("RU"));
-        } finally {
-
-        }
+        choiceBox1.getItems().addAll(dbHandler.getNamesByCountryOfRisk("RU")); //test value
 
         choiceBox1.setValue("Выберите акцию для просмотра");
 
@@ -94,8 +84,7 @@ public class SecondController extends Controllers {
 
         choiceBox1.setOnAction(actionEvent -> { // TODO move to stand-alone func
 
-            ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor(); //??
-
+            XYChart.Series<Number, Number> series = new XYChart.Series<>();
             choiceBox1.setValue(choiceBox1.getValue());
             String name = choiceBox1.getValue();
             String figi = dbHandler.getFigiByName(name);
@@ -103,68 +92,54 @@ public class SecondController extends Controllers {
             DateTime to = new DateTime(dateTime);
             DateTime from = new DateTime(dateTime.minusMonths(1));
 
-            GetCandles candles = new GetCandles("test", "POST", figi, from.toString(), to.toString(), 24);
+            GetCandles candles = new GetCandles("test", "POST", figi, from.toString(), to.toString(), 24); //test value
             try {
                 candles.getConnection();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
 
-            // if result returns
-            //SetCandleIntoSeries(candles.openResponse().getCandles(), series);
-            SetCandleIntoSeries(series);
+            // if result returns set it into series
+            SetCandleIntoSeries(candles.openResponse().getCandles(), series);
+
+            // create lineChart wth our data
+            LineChart<Number, Number> lineChart = new LineChart<>(new NumberAxis(), new NumberAxis());
+            lineChart.getData().add(series);
+
+            //create and fill tab
+            CreateNewTab(name, lineChart);
 
         });
 
-        // to chart works ?
-        final NumberAxis xAxis = new NumberAxis();
-        xAxis.setLabel("Month");
-        final NumberAxis yAxis = new NumberAxis();
-        yAxis.setLabel("Number of Month");
-        //creating the chart
-        LineChart1 = new LineChart(xAxis, yAxis);
-        LineChart1.getData().add(series);
-
     }
 
-    private void SetCandleIntoSeries(Candle[] candles, XYChart.Series<Number, Number> series) {
-        if (candles != null) {
-            Candle[] candlesDate = candles; // copy results
-            series.getData().removeAll(); // clear chart
+    private void CreateNewTab(String name, LineChart lineChart) {
 
-            for (Candle i : candlesDate) { // loop by results
-                series.getData().add(new XYChart.Data(i.getTime().getDay(), Integer.valueOf(i.getClose().getUnits())));
-            }
-
-            Scene scene = new Scene(LineChart1, 800, 600);
-            ModalWindow.openModalWindow(scene);
-
-            //LineChart1.getData().removeAll(LineChart1.getData()); // clear chart ?
-            //LineChart1.getData().add(series);
-            //LineChart1.setAnimated(true);
-
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Main/UID/UI/Asset.fxml")); // create new Loader
+        Parent node = null;  // node wth info for new tab
+        try {
+            node = loader.load();
+            // if we can create node fill it
+            AssetController controller = loader.getController(); // take pointer to controller
+            controller.initializeByParams(name, lineChart); // call func and set our params
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-    }
 
-    public void SetCandleIntoSeries(XYChart.Series<Number, Number> series) {
-        Platform.setImplicitExit(false);
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-
-                int j = 0;
-                int max = 100;
-                int min = 0;
-//                while (j < 10) {
-//                    series.getData().add(new XYChart.Data(j++, (int) ((Math.random() * (max - min)) + min)));
-//                }
-
-                series.getData().add(new XYChart.Data(j++, (int) ((Math.random() * (max - min)) + min)));
-
-                Scene scene = new Scene(LineChart1, 800, 600);
-                ModalWindow.openModalWindow(scene);
+        boolean tabExist = false;
+        for (Tab nowTab : TabPane1.getTabs()) { // loop by results
+            if (nowTab.getText().equalsIgnoreCase(name)) {
+                TabPane1.getTabs().get(TabPane1.getTabs().indexOf(nowTab)).setContent(node); //replace old content to new
+                tabExist = true;
+                TabPane1.getSelectionModel().select(nowTab);
             }
-        });
+        }
+
+        if (!tabExist) {
+            Tab tab = new AssetTab(name, node); //create new tab
+            TabPane1.getTabs().add(tab);
+            TabPane1.getSelectionModel().select(tab); //open new tab
+        }
     }
 
 }
