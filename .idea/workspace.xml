@@ -9,17 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-20 add modal window wth candles graph">
-      <change afterPath="$PROJECT_DIR$/src/Main/UID/AssetTab.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-20 create chart on tabs and destroy it same times">
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxAccount/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxAccount/GetSandboxAccountsResponseMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/OpenSandboxAccountsResponseMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/CloseSandboxAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/OpenSandboxAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/SandboxService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/InstrumentService/Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ModalWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ModalWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ParameterStringBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +104,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Main.Connectors.Data.Tinkoff.SandboxService" />
       <recent name="Main.UID" />
       <recent name="Connectors.Data.Tinkoff.MarketDataService.GetCandles" />
       <recent name="Connectors.Data.Tinkoff.InsrumentService.GetAssets" />
       <recent name="Connectors.Data" />
-      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\META-INF" />
@@ -116,7 +118,33 @@
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.GetSandboxAccounts">
+    <configuration name="CloseSandboxAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Connectors.Services.Tinkoff.SandboxService.CloseSandboxAccount" />
+      <module name="PetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Connectors.Services.Tinkoff.SandboxService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetSandboxAccounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Connectors.Services.Tinkoff.SandboxService.GetSandboxAccounts" />
+      <module name="PetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Connectors.Services.Tinkoff.SandboxService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="PetProject" />
@@ -140,10 +168,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestProject" />
+      <item itemvalue="Application.CloseSandboxAccounts" />
+      <item itemvalue="Application.GetSandboxAccounts" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetSandboxAccounts" />
+        <item itemvalue="Application.CloseSandboxAccounts" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -367,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673543755185</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="INV-20 create chart on tabs and destroy it same times">
+      <created>1673900995104</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673900995104</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -424,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor fix" />
     <MESSAGE value="Create base param and func to figure" />
     <MESSAGE value="Add and understand package" />
     <MESSAGE value="add new figure and replace some code on true place" />
@@ -449,7 +487,8 @@
     <MESSAGE value="DROP-8 start work wth linechart" />
     <MESSAGE value="DROP-18 fix DB connection, work wth collect data" />
     <MESSAGE value="INV-20 add modal window wth candles graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="INV-20 add modal window wth candles graph" />
+    <MESSAGE value="INV-20 create chart on tabs and destroy it same times" />
+    <option name="LAST_COMMIT_MESSAGE" value="INV-20 create chart on tabs and destroy it same times" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -458,10 +497,39 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="18" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="267" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="264" />
+          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/OpenSandboxAccountsResponseMap.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/OpenSandboxAccounts.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxAccount/GetSandboxAccountsResponseMap.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxAccount/GetSandboxAccountsResponseMap.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxAccount/GetSandboxAccountsResponseMap.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="288" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -481,5 +549,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PetProgect$OpenSandboxAccount.ic" NAME="OpenSandboxAccount Coverage Results" MODIFIED="1674065108388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Main.Connectors.Services.Tinkoff.SandboxService.*</FILTER>
+    </SUITE>
   </component>
 </project>

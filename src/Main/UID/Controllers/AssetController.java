@@ -2,6 +2,7 @@ package Main.UID.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -60,8 +61,8 @@ public class AssetController extends Controllers {
 
     @FXML
     void initialize() { //default
-        XYChart.Series<Number, Number> series = new XYChart.Series<>();
-        lineChartAsset.getData().add(series);
+
+        lineChartAsset = new LineChart<>(new NumberAxis(), new NumberAxis()); // to correct copy into this chart
 
         choiceBoxInterval.getItems().addAll("1 minute", "5 minutes", "15 minutes", "1 hour", "1 day");
         choiceBoxInterval.setValue("1 day");
@@ -70,7 +71,8 @@ public class AssetController extends Controllers {
         dataPickerFrom.setValue(LocalDate.now().minusMonths(1));
 
         test.setOnAction(actionEvent -> {
-            SetCandleIntoSeries(series);
+            if (lineChartAsset.getData().isEmpty()) lineChartAsset.getData().add(new XYChart.Series<Number, Number>());
+            SetCandleIntoSeries(lineChartAsset.getData().get(0));
         });
 
     }
@@ -78,12 +80,13 @@ public class AssetController extends Controllers {
     void initializeByParams() { //set value from parent
     }
 
-    void initializeByParams(String name, LineChart lineChart) { //set value from parent
+    void initializeByParams(String name, LineChart<Number, Number> lineChart) { //set value from parent
         labelName.setText(name);
 //        LineChartAsset = new LineChart<>();
-        lineChartAsset = lineChart;
-        //anchorPaneLineChart.getChildren().clear();
-//        anchorPaneLineChart.getChildren().add(lineChart);
+//        lineChartAsset.getData().removeAll();
+        lineChartAsset.getData().add(lineChart.getData().get(0));
+        anchorPaneLineChart.getChildren().remove(anchorPaneLineChart.getChildren().get(0));
+        anchorPaneLineChart.getChildren().add(lineChartAsset);
 //        anchorPane1.getChildren().clear();
 //        anchorPane1.getChildren().add(this.lineChartAsset);
     }

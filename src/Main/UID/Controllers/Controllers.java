@@ -48,7 +48,7 @@ public class Controllers {
     }
 
     public void SetCandleIntoSeries(XYChart.Series<Number, Number> series) {
-        series.getData().removeAll();
+        series.getData().removeAll(series.getData());
         int j = 0;
         int max = 100;
         int min = 0;

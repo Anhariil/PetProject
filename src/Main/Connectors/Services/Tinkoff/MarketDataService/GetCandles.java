@@ -105,6 +105,7 @@ public class GetCandles extends MarketDataService {
         }
     }
 
+
     public static void main() throws IOException {
         GetCandles test = new GetCandles();
         test.getConnection();

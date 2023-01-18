@@ -85,6 +85,7 @@ public class SecondController extends Controllers {
         choiceBox1.setOnAction(actionEvent -> { // TODO move to stand-alone func
 
             XYChart.Series<Number, Number> series = new XYChart.Series<>();
+            series.setName("test shit twice");
             choiceBox1.setValue(choiceBox1.getValue());
             String name = choiceBox1.getValue();
             String figi = dbHandler.getFigiByName(name);
