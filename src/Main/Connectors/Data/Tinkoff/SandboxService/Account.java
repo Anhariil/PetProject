@@ -1,4 +1,4 @@
-package Main.Connectors.Data.Tinkoff.SandboxService.GetSandboxAccount;
+package Main.Connectors.Data.Tinkoff.SandboxService;
 
 import Main.DateTime;
 

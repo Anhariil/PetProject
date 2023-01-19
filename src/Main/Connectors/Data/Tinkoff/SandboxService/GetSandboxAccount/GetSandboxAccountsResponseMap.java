@@ -1,6 +1,7 @@
 package Main.Connectors.Data.Tinkoff.SandboxService.GetSandboxAccount;
 
 import Main.Connectors.Data.Mapping;
+import Main.Connectors.Data.Tinkoff.SandboxService.Account;
 import Main.DateTime;
 
 import java.io.BufferedReader;

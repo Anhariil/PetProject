@@ -20,6 +20,10 @@ public class CurrencyUnitsNano extends UnitsNano {
         this.currency = currency;
     }
 
+    public String getCurrency() {
+        return currency;
+    }
+
     public void setCurrency(String currency) {
         this.currency = currency;
     }

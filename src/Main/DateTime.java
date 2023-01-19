@@ -60,6 +60,18 @@ public class DateTime {
         return stringToReturn;
     }
 
+    public static DateTime valueOf(String dataTime) {
+        return new DateTime(dataTime);
+    }
+
+    public static DateTime valueOf(LocalDateTime localDateTime) {
+        return new DateTime(localDateTime);
+    }
+
+    public static DateTime now() {
+        return DateTime.valueOf(LocalDateTime.now());
+    }
+
     public boolean isBefore(DateTime second) {
         boolean toReturn = false;
         if (this.getYear() <= second.getYear())
