@@ -22,6 +22,9 @@ public class DateTime {
         this.millsec = 100;
     }
 
+    /**
+     * @param dateTime format = yyyy-mm-ddThh:MM:ss
+     */
     public DateTime(String dateTime) {
         this.year = Integer.valueOf(dateTime.substring(0, 4));
         this.month = Integer.valueOf(dateTime.substring(5, 7));

@@ -1,6 +1,7 @@
 package Main.Connectors;
 
 import Main.Connectors.Data.Mapping;
+import Main.Connectors.Data.Tinkoff.ErrorResponse;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,6 +20,7 @@ public class Connectors {
     protected String jsonInputString;
     protected String method;
     protected Mapping response;
+    protected ErrorResponse errorResponse;
     protected int responseCode;
     protected String responseMessage;
     protected BufferedReader bufferedResponse;
@@ -44,7 +46,7 @@ public class Connectors {
         con.setConnectTimeout(5000); // 5 секунд
         con.setReadTimeout(5000);
 
-        // записываем запрос
+        // write response
         try (OutputStream os = con.getOutputStream()) {
             byte[] input = jsonInputString.getBytes(StandardCharsets.UTF_8);
             os.write(input, 0, input.length);
@@ -58,18 +60,16 @@ public class Connectors {
         System.out.println(this.responseCode);
         System.out.println(this.responseMessage);
 
-        // записываем ответ
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
-            this.setResponse(br); // Call response parsers for everyone child class or set default
-//            StringBuilder response = new StringBuilder();
-//            String responseLine = null;
-//            while ((responseLine = br.readLine()) != null) {
-//                response.append(responseLine.trim());
-//            }
-//            this.jsonInputString = response.toString();
-//            //System.out.println(this.jsonInputString); // выписываем построчно ответ TODO сделать парсер для каждго коннектора
+        // write request
+        if (this.responseCode <= 299) { // positive request
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
+                this.setResponse(br); // Call response parsers for everyone child class or set default
+            }
+        } else { // negative request
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getErrorStream(), StandardCharsets.UTF_8))) {
+                this.setResponse(br);
+            }
         }
-
         con.disconnect();
     }
 

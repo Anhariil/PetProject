@@ -1,24 +1,30 @@
-package Main.Connectors.Services.Tinkoff.SandboxService;
+package Main.Connectors.Services.Tinkoff.OrderService;
 
 import Main.Connectors.Data.Mapping;
-import Main.Connectors.Data.Tinkoff.InsrumentService.UnitsNano;
-import Main.Connectors.Data.Tinkoff.OrdersService.PostOrder.PostOrderRequest;
 import Main.Connectors.Data.Tinkoff.OrdersService.PostOrder.PostOrderResponseMap;
+import Main.Connectors.Data.Tinkoff.OrdersService.ReplaceOrderRequest;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class PostSandboxOrder extends SandboxService {
-    private static final String method = "PostSandboxOrder";
+public class ReplaceOrder extends OrderService {
+    private static final String method = "ReplaceOrder";
+    protected ReplaceOrderRequest request;
     protected PostOrderResponseMap response;
-    protected PostOrderRequest request;
 
-    public PostSandboxOrder(String url, String method, PostOrderRequest request) {
+    public ReplaceOrder(String url, String method, ReplaceOrderRequest request) {
         setUrl(url);
         setHeaders();
         setJsonOutputString(request);
         setMethod(method);
     }
+
+//    public PostOrder(ReplaceOrderRequest request) {
+//        setUrl("prod");
+//        setHeaders();
+//        setJsonOutputString();
+//        setMethod("POST");
+//    }
 
     @Override
     protected void setUrl(String type) {
@@ -39,19 +45,22 @@ public class PostSandboxOrder extends SandboxService {
         }
     }
 
+    @Override
+    public PostOrderResponseMap openResponse() {
+        return this.response;
+    }
+
     protected void setJsonOutputString() {
         this.jsonOutputString = this.request.toJsonString();
     }
 
-    protected void setJsonOutputString(PostOrderRequest request) {
+    protected void setJsonOutputString(ReplaceOrderRequest request) {
         this.jsonOutputString = request.toJsonString();
     }
 
-    public static void main(String[] args) throws IOException {
-        PostOrderRequest request = PostOrderRequest.newRequest("BBG000BN56Q9", "1", new UnitsNano("40", 0),
-                "buy", "bf9a5fe2-1db1-4d63-962c-931a28fb5ba6", "market", "BBG000BN56Q9");
-        PostSandboxOrder test = new PostSandboxOrder("test", "POST", request);
-        test.getConnection();
-        // System.out.println(test.openResponse().getAccountId());
-    }
+//    public static void main(String[] args) throws IOException {
+//        ReplaceOrder test = new ReplaceOrder("bf9a5fe2-1db1-4d63-962c-931a28fb5ba6");
+//        test.getConnection();
+//        // System.out.println(test.openResponse().getAccountId());
+//    }
 }

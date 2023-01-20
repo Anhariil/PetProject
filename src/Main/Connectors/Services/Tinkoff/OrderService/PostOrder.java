@@ -53,6 +53,10 @@ public class PostOrder extends OrderService {
         this.jsonOutputString = request.toJsonString();
     }
 
+    @Override
+    public PostOrderResponseMap openResponse() {
+        return this.response;
+    }
 //    public static void main(String[] args) throws IOException {
 //        PostOrder test = new PostOrder("bf9a5fe2-1db1-4d63-962c-931a28fb5ba6");
 //        test.getConnection();

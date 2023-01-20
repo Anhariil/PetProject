@@ -24,18 +24,24 @@ public class DatabaseHandler extends Configs {
         return dbConnection;
     }
 
-    public void saveShares(Instrument instruments) throws ClassNotFoundException {
+    /**
+     * Call to save instrument into DB
+     *
+     * @param instrument
+     * @throws ClassNotFoundException
+     */
+    public void saveShare(Instrument instrument) throws ClassNotFoundException {
         String insert = "INSERT INTO " + InstrumentConst.SHARE_TABLE + "(" + InstrumentConst.SHARE_FIGI + "," + InstrumentConst.SHARE_COUNTRY_OF_RISK
                 + "," + InstrumentConst.SHARE_COUNTRY_OF_RISK_NAME + "," + InstrumentConst.SHARE_SECTOR + "," + InstrumentConst.SHARE_NAME + ")" + "VALUES(?,?,?,?,?)";
 
         try {
             PreparedStatement prSt = getDbConnection().prepareStatement(insert); // set our request
             // set our values
-            prSt.setString(1, instruments.getFigi());
-            prSt.setString(2, instruments.getCountryOfRisk());
-            prSt.setString(3, instruments.getCountryOfRiskName());
-            prSt.setString(4, instruments.getSector());
-            prSt.setString(5, instruments.getName());
+            prSt.setString(1, instrument.getFigi());
+            prSt.setString(2, instrument.getCountryOfRisk());
+            prSt.setString(3, instrument.getCountryOfRiskName());
+            prSt.setString(4, instrument.getSector());
+            prSt.setString(5, instrument.getName());
 
 
             prSt.executeUpdate(); // to set info in DB
@@ -44,6 +50,11 @@ public class DatabaseHandler extends Configs {
         }
     }
 
+    /**
+     * Call to update Instruments in DB
+     *
+     * @param instruments
+     */
     public void updateInstruments(Instrument[] instruments) {
         for (Instrument i : instruments) {
             updateInstrument(i);
@@ -163,6 +174,39 @@ public class DatabaseHandler extends Configs {
             }
         } catch (SQLException e) {
             System.out.println("Error in getNamesByCountryOfRisk: " + e);
+        }
+
+        return resultString;
+    }
+
+    /**
+     * Method to get any value from shares by figi
+     *
+     * @param value
+     * @param figi
+     * @return value as string or null if error in request
+     */
+    public String getValueByFigi(String value, String figi) {
+        ResultSet rs = null;
+        String resultString = null;
+
+        String select = "SELECT " + /* set value name */ "?" + " FROM " + InstrumentConst.SHARE_TABLE + " WHERE "
+                + InstrumentConst.SHARE_FIGI + "=?";
+        try {
+            PreparedStatement prSt = getDbConnection().prepareStatement(select); // set our request
+            prSt.setString(1, value);
+            prSt.setString(2, figi);
+            rs = prSt.executeQuery(); // to get info from DB
+        } catch (SQLException | ClassNotFoundException e) {
+            System.out.println("Error in getParamByFigi: " + e);
+        }
+
+        try {
+            while (rs.next()) { // for each string
+                resultString = rs.getString(1); // we take first string in line, cos it's our value
+            }
+        } catch (SQLException e) {
+            System.out.println("Error in getParamByFigi: " + e);
         }
 
         return resultString;

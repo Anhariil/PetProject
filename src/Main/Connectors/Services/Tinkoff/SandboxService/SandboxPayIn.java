@@ -19,7 +19,7 @@ public class SandboxPayIn extends SandboxService {
     }
 
     public SandboxPayIn(String accountId) { // default for test (add 100 rub)
-        CurrencyUnitsNano amount = new CurrencyUnitsNano("100", 0, "rub");
+        CurrencyUnitsNano amount = new CurrencyUnitsNano("10000", 0, "rub");
         setUrl("test");
         setHeaders();
         setJsonOutputString(accountId, amount);

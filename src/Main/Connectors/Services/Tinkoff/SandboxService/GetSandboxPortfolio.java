@@ -10,17 +10,22 @@ public class GetSandboxPortfolio extends SandboxService {
     private static final String method = "GetSandboxPortfolio";
     protected GetSandboxPortfolioResponseMap response;
 
-    public GetSandboxPortfolio(String url, String method, String accountId) {
-        setUrl(url);
+    public GetSandboxPortfolio(String accountId, String currency) {
+        setUrl("test");
         setHeaders();
-        setJsonOutputString(accountId);
-        setMethod(method);
+        setJsonOutputString(accountId, currency);
+        setMethod("POST");
     }
 
+    /**
+     * default response wth currency in RUB
+     *
+     * @param accountId
+     */
     public GetSandboxPortfolio(String accountId) {
         setUrl("test");
         setHeaders();
-        setJsonOutputString(accountId);
+        setJsonOutputString(accountId, "rub");
         setMethod("POST");
     }
 
@@ -51,7 +56,7 @@ public class GetSandboxPortfolio extends SandboxService {
     }
 
     public static void main(String[] args) throws IOException {
-        GetSandboxPortfolio test = new GetSandboxPortfolio("3a56c018-a270-4b96-8674-331da25dadfd");
+        GetSandboxPortfolio test = new GetSandboxPortfolio("bf9a5fe2-1db1-4d63-962c-931a28fb5ba6");
         test.getConnection();
         // System.out.println(test.openResponse().getAccountId());
     }

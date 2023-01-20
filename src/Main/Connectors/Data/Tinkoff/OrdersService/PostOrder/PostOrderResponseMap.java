@@ -2,12 +2,13 @@ package Main.Connectors.Data.Tinkoff.OrdersService.PostOrder;
 
 import Main.Connectors.Data.Mapping;
 import Main.Connectors.Data.Tinkoff.InsrumentService.Shares.CurrencyUnitsNano;
+import Main.Connectors.Data.Tinkoff.OrdersService.Order;
 
 import java.io.BufferedReader;
 
 public class PostOrderResponseMap extends Mapping {
 
-    protected PostOrderResponse response;
+    protected Order orderInfo;
 
     public PostOrderResponseMap(BufferedReader bufferedReader) {
         boolean start = false;
@@ -37,7 +38,7 @@ public class PostOrderResponseMap extends Mapping {
             String responseLine = null;
             while ((responseLine = br.readLine()) != null) {
                 String nowLine = responseLine.trim();
-                //System.out.println(nowLine); // test now string
+//                System.out.println(nowLine); // test now string
 
                 if (nowLine.equalsIgnoreCase("{"))
                     start = true;
@@ -46,20 +47,20 @@ public class PostOrderResponseMap extends Mapping {
                 if (start) {
                     switch (startId) {
                         case 1:
-                            orderId = nowLine.substring(9, nowLine.indexOf("\","));
+                            orderId = nowLine.substring(12, nowLine.indexOf("\","));
                             break;
                         case 2:
-                            executionReportStatus = nowLine.substring(11, nowLine.indexOf("\","));
+                            executionReportStatus = nowLine.substring(26, nowLine.indexOf("\","));
                             break;
                         case 3:
-                            lotsRequested = Integer.valueOf(nowLine.substring(11, nowLine.indexOf("\",")));
+                            lotsRequested = Integer.valueOf(nowLine.substring(18, nowLine.indexOf("\",")));
                             break;
                         case 4:
-                            lotsExecuted = Integer.valueOf(nowLine.substring(11, nowLine.indexOf("\",")));
+                            lotsExecuted = Integer.valueOf(nowLine.substring(17, nowLine.indexOf("\",")));
                             break;
                         // step 5 - start new array
                         case 6:
-                            currency = nowLine.substring(10, nowLine.indexOf("\","));
+                            currency = nowLine.substring(13, nowLine.indexOf("\","));
                             break;
                         case 7:
                             units = nowLine.substring(10, nowLine.indexOf("\","));
@@ -70,18 +71,18 @@ public class PostOrderResponseMap extends Mapping {
                         case 9: // step wth "},"
                             arrayCUN[index] = new CurrencyUnitsNano(units, nano, currency);
                             index++;
-                            if (index < 6) startId = 5; // repeat for all array
+                            if (index < 5)
+                                startId = 4; // repeat for all array
                             break;
                         case 10:
                             if (nowLine.indexOf("{") == -1) { //  page aciValue not exist
                                 figi = nowLine.substring(10, nowLine.indexOf("\","));
-                                startId = 14; // step away
-                            } else {
-                                arrayCUN[index] = null;
+                                startId = 15; // step away
+                                arrayCUN[5] = null;
                             }
                             break;
                         case 11:
-                            currency = nowLine.substring(10, nowLine.indexOf("\","));
+                            currency = nowLine.substring(13, nowLine.indexOf("\","));
                             break;
                         case 12:
                             units = nowLine.substring(10, nowLine.indexOf("\","));
@@ -95,7 +96,7 @@ public class PostOrderResponseMap extends Mapping {
                             figi = nowLine.substring(9, nowLine.indexOf("\","));
                             break;
                         case 16:
-                            direction = nowLine.substring(13, nowLine.indexOf("\","));
+                            direction = nowLine.substring(14, nowLine.indexOf("\","));
                             break;
                         // step 17 wth initialSecurityPrice {
                         case 18:
@@ -109,21 +110,22 @@ public class PostOrderResponseMap extends Mapping {
                             break;
                         case 21: // step wth "},"
                             initialSecurityPrice = new CurrencyUnitsNano(units, nano, currency);
+                            break;
                         case 22:
-                            orderType = nowLine.substring(18, nowLine.indexOf("\","));
+                            orderType = nowLine.substring(14, nowLine.indexOf("\","));
                             break;
                         case 23:
-                            message = nowLine.substring(22, nowLine.indexOf("\","));
+                            message = nowLine.substring(12, nowLine.indexOf("\","));
                             break;
                         case 24:
-                            instrumentUid = nowLine.substring(11, nowLine.indexOf("\","));
+                            instrumentUid = nowLine.substring(18, nowLine.length() - 1);
                             break;
                     }
                     startId++;
                 }
             }
             // after set all copy into primary
-            this.response = new PostOrderResponse(orderId, executionReportStatus, lotsRequested, lotsExecuted, arrayCUN[0],
+            this.orderInfo = new Order(orderId, executionReportStatus, lotsRequested, lotsExecuted, arrayCUN[0],
                     arrayCUN[1], arrayCUN[2], arrayCUN[3], arrayCUN[4], arrayCUN[5], figi, direction, initialSecurityPrice,
                     orderType, message, initialOrderPricePt, instrumentUid);
         } catch (Exception e) {
@@ -131,5 +133,7 @@ public class PostOrderResponseMap extends Mapping {
         }
     }
 
-
+    public Order getOrderInfo() {
+        return orderInfo;
+    }
 }

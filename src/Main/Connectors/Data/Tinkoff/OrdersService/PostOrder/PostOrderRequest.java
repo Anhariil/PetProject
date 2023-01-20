@@ -70,7 +70,7 @@ public class PostOrderRequest {
      * @param orderType limit or market
      * @return
      */
-    public PostOrderRequest newRequest(String figi, String quantity, UnitsNano price, String direction, String accountId, String orderType, String instrumentId) {
+    public static PostOrderRequest newRequest(String figi, String quantity, UnitsNano price, String direction, String accountId, String orderType, String instrumentId) {
         switch (direction) {
             case "buy":
                 direction = "ORDER_DIRECTION_BUY";
@@ -78,14 +78,18 @@ public class PostOrderRequest {
             case "sell":
                 direction = "ORDER_DIRECTION_SELL";
                 break;
+            default:
+                direction = "ORDER_DIRECTION_UNSPECIFIED";
         }
         switch (orderType) {
             case "limit":
-                direction = "ORDER_DIRECTION_LIMIT";
+                orderType = "ORDER_TYPE_LIMIT";
                 break;
             case "market":
-                direction = "ORDER_DIRECTION_MARKET";
+                orderType = "ORDER_TYPE_MARKET";
                 break;
+            default:
+                orderType = "ORDER_TYPE_UNSPECIFIED";
         }
         return new PostOrderRequest(figi, quantity, price, direction, accountId, orderType, instrumentId);
     }
