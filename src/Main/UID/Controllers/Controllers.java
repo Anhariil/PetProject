@@ -34,14 +34,14 @@ public class Controllers {
         stage1.show();
     }
 
-    public void SetCandleIntoSeries(Candle[] candles, XYChart.Series<Number, Number> series) {
+    public void SetCandleIntoSeries(Candle[] candles, XYChart.Series<String, Number> series) {
 
         if (candles != null) {
             Candle[] candlesDate = candles; // copy results
             series.getData().removeAll(series.getData()); // clear chart
 
             for (Candle i : candlesDate) { // loop by results
-                series.getData().add(new XYChart.Data(i.getTime().getDay(), Integer.valueOf(i.getClose().getUnits())));
+                series.getData().add(new XYChart.Data(i.getTime().toString(), Integer.valueOf(i.getClose().getUnits())));
             }
 
         }
@@ -56,5 +56,6 @@ public class Controllers {
             series.getData().add(new XYChart.Data(j++, (int) ((Math.random() * (max - min)) + min)));
         }
     }
+
 
 }

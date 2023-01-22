@@ -28,7 +28,7 @@ public class Main extends Application {
 //        Parent root = FXMLLoader.load(getClass().getResource("/Main/UID/UI/Welcome.fxml")); // имя файла - в данном случае типа fxml - который будет открываться при вызове
         Parent root = FXMLLoader.load(getClass().getResource("/Main/UID/UI/Second.fxml"));  // TODO delete after test?
         stage.setTitle("Welcome to the new brave World"); // заголовок
-        Scene scene = new Scene(root, 700, 400);
+        Scene scene = new Scene(root, 1000, 600);
         stage.setScene(scene);
         stage.show(); // запуск окна
 

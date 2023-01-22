@@ -7,6 +7,7 @@ import Main.UID.AssetTab;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
@@ -42,9 +43,8 @@ public class SecondController extends Controllers {
     /**
      * Chart wth info about share
      */
-    @FXML
-    private LineChart<Number, Number> LineChart1; //TODO fix type ?
-
+//    @FXML
+//    private LineChart<Number, Number> LineChart1; //TODO fix type ?
     @FXML
     void initialize() throws IOException, InterruptedException {
 
@@ -84,7 +84,7 @@ public class SecondController extends Controllers {
 
         choiceBox1.setOnAction(actionEvent -> { // TODO move to stand-alone func
 
-            XYChart.Series<Number, Number> series = new XYChart.Series<>();
+            XYChart.Series<String, Number> series = new XYChart.Series<>();
             series.setName("test shit twice");
             choiceBox1.setValue(choiceBox1.getValue());
             String name = choiceBox1.getValue();
@@ -104,17 +104,17 @@ public class SecondController extends Controllers {
             SetCandleIntoSeries(candles.openResponse().getCandles(), series);
 
             // create lineChart wth our data
-            LineChart<Number, Number> lineChart = new LineChart<>(new NumberAxis(), new NumberAxis());
+            LineChart<String, Number> lineChart = new LineChart<>(new CategoryAxis(), new NumberAxis());
             lineChart.getData().add(series);
 
             //create and fill tab
-            CreateNewTab(name, lineChart);
+            CreateNewTab(name, figi, lineChart);
 
         });
 
     }
 
-    private void CreateNewTab(String name, LineChart lineChart) {
+    private void CreateNewTab(String name, String figi, LineChart<String, Number> lineChart) {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Main/UID/UI/Asset.fxml")); // create new Loader
         Parent node = null;  // node wth info for new tab
@@ -122,7 +122,7 @@ public class SecondController extends Controllers {
             node = loader.load();
             // if we can create node fill it
             AssetController controller = loader.getController(); // take pointer to controller
-            controller.initializeByParams(name, lineChart); // call func and set our params
+            controller.initializeByParams(name, figi, lineChart); // call func and set our params
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -137,7 +137,7 @@ public class SecondController extends Controllers {
         }
 
         if (!tabExist) {
-            Tab tab = new AssetTab(name, node); //create new tab
+            Tab tab = new AssetTab(name, node); //create new tab and fill it
             TabPane1.getTabs().add(tab);
             TabPane1.getSelectionModel().select(tab); //open new tab
         }

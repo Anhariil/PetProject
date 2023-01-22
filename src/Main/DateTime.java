@@ -1,5 +1,6 @@
 package Main;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class DateTime {
@@ -11,7 +12,7 @@ public class DateTime {
     int sec;
     int millsec;
 
-    public DateTime() { // TODO optimize wth second constructor
+    public DateTime() {
         LocalDateTime now = LocalDateTime.now();
         this.year = now.getYear();
         this.month = now.getMonthValue();
@@ -42,6 +43,31 @@ public class DateTime {
         this.hour = now.getHour();
         this.min = now.getMinute();
         this.sec = now.getSecond();
+        this.millsec = 100;
+    }
+
+    public DateTime(DateTime dateTime) {
+        this.year = dateTime.getYear();
+        this.month = dateTime.getMonth();
+        this.day = dateTime.getDay();
+        this.hour = dateTime.getHour();
+        this.min = dateTime.getMin();
+        this.sec = dateTime.getSec();
+        this.millsec = dateTime.getMillsec();
+    }
+
+    /**
+     * Set date value and set time as 9.00
+     *
+     * @param now
+     */
+    public DateTime(LocalDate now) {
+        this.year = now.getYear();
+        this.month = now.getMonthValue();
+        this.day = now.getDayOfMonth();
+        this.hour = 9;
+        this.min = 0;
+        this.sec = 0;
         this.millsec = 100;
     }
 
@@ -100,6 +126,49 @@ public class DateTime {
 
     public boolean isAfter(DateTime second) {
         return !this.isBefore(second);
+    }
+
+    public int differenceInDays(DateTime second) {
+        return Math.abs(this.dayNumberInYear() - second.dayNumberInYear());
+    }
+
+    public int dayNumberInYear() {
+        int result = 0;
+        for (int i = 1; i < this.getMonth(); i++) {
+            if (i == 2) {
+                result += 28;
+                if ((this.getYear() % 4) == 0) { //leap year
+                    result += 1;
+                }
+            } else {
+                result += 30;
+
+                if (i < 8) {
+                    result += i % 2;
+                } else {
+                    result += (i + 1) % 2;
+                }
+            }
+        }
+
+        return result + this.getDay();
+    }
+
+    public void plusDays(int days) {
+        int v = (this.getYear() % 4 == 0) ? 1 : 0;
+        int m = (this.getMonth() < 8) ? this.getMonth() % 2 : (this.getMonth() + 1) % 2;
+        if (this.getMonth() == 2 && (this.getDay() + days > 28 + v)) {
+            this.month += 1;
+            plusDays(days - (28 + v - this.getDay()));
+        } else if (this.getDay() + days > 30 + m) {
+            if (this.month == 12) {
+                this.month = 1;
+                this.year += 1;
+            } else this.month += 1;
+            plusDays(days - (30 + m - this.getDay()));
+        } else {
+            this.day += days;
+        }
     }
 
     /*

@@ -12,36 +12,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-30 create some new connectors, work wth PostOrderResponseMap and sandbox analog, need test response">
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/CancelOrderResponseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/GetOrderStateResponseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/GetOrdersResponseMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/OrderStage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/OrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/ReplaceOrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/OrderService/CancelOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/OrderService/GetOrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/OrderService/GetOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/OrderService/ReplaceOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/CancelSandboxOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxOrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/ReplaceSandboxOrder.java" afterDir="false" />
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-30 create all connectors from OrderService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Connectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Connectors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/PostOrder/PostOrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/PostOrder/PostOrderRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/PostOrder/PostOrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/PostOrder/PostOrderResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/OrdersService/PostOrder/PostOrderResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/PortfolioPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/PortfolioPositions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/OrderService/PostOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/OrderService/PostOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxPortfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxPortfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/PostSandboxOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/PostSandboxOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/PostSandboxOrderResponseMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/SandboxPayIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/SandboxPayIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,9 +115,9 @@
       <recent name="C:\Users\Митя\IdeaProjects\PetProgect\src\io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GetSandboxPortfolio">
-    <configuration name="CancelSandboxOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Connectors.Services.Tinkoff.SandboxService.CancelSandboxOrder" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GetSandboxPortfolio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Connectors.Services.Tinkoff.SandboxService.GetSandboxPortfolio" />
       <module name="PetProject" />
       <extension name="coverage">
         <pattern>
@@ -152,12 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetSandboxPortfolio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Connectors.Services.Tinkoff.SandboxService.GetSandboxPortfolio" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="PetProject" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\JavaLib\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Main.Connectors.Services.Tinkoff.SandboxService.*" />
+          <option name="PATTERN" value="Main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -213,19 +191,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.TestProject" />
-      <item itemvalue="Application.CancelSandboxOrder" />
       <item itemvalue="Application.GetSandboxPortfolio" />
       <item itemvalue="Application.PostSandboxOrder" />
       <item itemvalue="Application.ReplaceSandboxOrder" />
       <item itemvalue="Application.SandboxPayIn" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.GetSandboxPortfolio" />
         <item itemvalue="Application.PostSandboxOrder" />
         <item itemvalue="Application.SandboxPayIn" />
         <item itemvalue="Application.ReplaceSandboxOrder" />
-        <item itemvalue="Application.CancelSandboxOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -469,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674162647843</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="INV-30 create all connectors from OrderService">
+      <created>1674255516245</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674255516245</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new figure and replace some code on true place" />
     <MESSAGE value="add grafic shits" />
     <MESSAGE value="add lib JavaFX, but its not working, search solution" />
     <MESSAGE value="add lib JavaFX and its work! add some logic and fan" />
@@ -551,7 +535,8 @@
     <MESSAGE value="INV-20 create chart on tabs and destroy it same times" />
     <MESSAGE value="INV-30 create some new connectors" />
     <MESSAGE value="INV-30 create some new connectors, work wth PostOrderResponseMap and sandbox analog, need test response" />
-    <option name="LAST_COMMIT_MESSAGE" value="INV-30 create some new connectors, work wth PostOrderResponseMap and sandbox analog, need test response" />
+    <MESSAGE value="INV-30 create all connectors from OrderService" />
+    <option name="LAST_COMMIT_MESSAGE" value="INV-30 create all connectors from OrderService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -560,15 +545,6 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="18" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ClassCastException" package="java.lang" />
-          <option name="timeStamp" value="267" />
-        </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/MarketDataService/GetCandles/GetCandlesResponseMap.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="268" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/OpenSandboxAccountsResponseMap.java</url>
           <line>18</line>
@@ -626,18 +602,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="388" />
+          <line>49</line>
+          <option name="timeStamp" value="407" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java</url>
-          <line>128</line>
-          <option name="timeStamp" value="404" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java</url>
-          <line>165</line>
-          <option name="timeStamp" value="406" />
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="417" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -650,7 +621,6 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="this" />
-        <watch expression="this.instruments[i].countryOfRisk" />
       </configuration>
     </watches-manager>
   </component>
