@@ -15,11 +15,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
-import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class AssetController extends Controllers {
@@ -127,47 +124,7 @@ public class AssetController extends Controllers {
                     break;
             }
 
-            int repeat = 1; // how many times we should call GetCandles
-            int delta = 1; // days different between call
-            if ((interval == 1 || interval == 5 || interval == 15) & from.differenceInDays(to) > 1) {
-                repeat = from.differenceInDays(to); // do repeat for each day
-            } else if (interval == 60 & from.differenceInDays(to) > 7) {
-                repeat = from.differenceInDays(to) / 7 + 1; // do repeat for each week
-                delta = 7;
-            } else {
-                if (from.differenceInDays(to) > 365) {
-                    repeat = from.differenceInDays(to) / 365 + 1; // do repeat for each year
-                    delta = 365;
-                }
-            }
-
-            List<Candle> candlesList = new ArrayList<>(); // create list to collect and join results
-
-            if (repeat > 1) {
-                to = new DateTime(from); // set to take intervals into loop
-                to.plusDays(delta);
-            }
-
-            for (int i = 0; i < repeat; i++) {
-
-                GetCandles candles = new GetCandles("test", "POST", figi, from.toString(), to.toString(), interval); // value from UI
-                try {
-                    candles.getConnection();
-                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-                    System.out.println("ERR in get Connection" + e);
-                }
-
-                for (Candle c : candles.openResponse().getCandles()) // add all in list TODO how set wth addAll ?
-                    candlesList.add(c);
-
-                // set param to new interval
-                from.plusDays(delta);
-                to.plusDays(delta);
-            }
-
-            Candle[] candles = new Candle[candlesList.size()];
-            candlesList.toArray(candles);
+            Candle[] candles = GetCandles.getCandles("test", "POST", figi, from, to, interval);
 
             // if result returns set it into series
             SetCandleIntoSeries(candles, lineChartAsset.getData().get(0)); // get correct series and fill

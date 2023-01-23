@@ -60,4 +60,9 @@ public class GetSandboxPortfolio extends SandboxService {
         test.getConnection();
         // System.out.println(test.openResponse().getAccountId());
     }
+
+    @Override
+    public GetSandboxPortfolioResponseMap openResponse() {
+        return this.response;
+    }
 }

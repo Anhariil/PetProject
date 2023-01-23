@@ -37,4 +37,48 @@ public class PortfolioPositions {
         this.positionUid = positionUid;
         this.instrumentUid = instrumentUid;
     }
+
+    public String getFigi() {
+        return figi;
+    }
+
+    public String getInstrumentType() {
+        return instrumentType;
+    }
+
+    public UnitsNano getQuantity() {
+        return quantity;
+    }
+
+    public CurrencyUnitsNano getAveragePositionPrice() {
+        return averagePositionPrice;
+    }
+
+    public UnitsNano getAveragePositionPricePt() {
+        return averagePositionPricePt;
+    }
+
+    public CurrencyUnitsNano getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public CurrencyUnitsNano getAveragePositionPriceFifo() {
+        return averagePositionPriceFifo;
+    }
+
+    public UnitsNano getQuantityLots() {
+        return quantityLots;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public String getPositionUid() {
+        return positionUid;
+    }
+
+    public String getInstrumentUid() {
+        return instrumentUid;
+    }
 }

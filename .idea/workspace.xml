@@ -12,13 +12,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-30 create all connectors from OrderService">
+    <list default="true" id="e0880aaf-dcd3-4ab7-9923-ddafe97779d1" name="Changes" comment="INV-30 update UI and call getCandles by part">
+      <change afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/PortfolioAnalyticsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Configs/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/InsrumentService/UnitsNano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/PortfolioPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/PortfolioPositions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/MarketDataService/GetCandles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxPortfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connectors/Services/Tinkoff/SandboxService/GetSandboxPortfolio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DateTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/Controllers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/Controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/UID/UI/Second.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -454,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674255516245</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="INV-30 update UI and call getCandles by part">
+      <created>1674420026480</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674420026480</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add grafic shits" />
     <MESSAGE value="add lib JavaFX, but its not working, search solution" />
     <MESSAGE value="add lib JavaFX and its work! add some logic and fan" />
     <MESSAGE value="test username" />
@@ -536,7 +549,8 @@
     <MESSAGE value="INV-30 create some new connectors" />
     <MESSAGE value="INV-30 create some new connectors, work wth PostOrderResponseMap and sandbox analog, need test response" />
     <MESSAGE value="INV-30 create all connectors from OrderService" />
-    <option name="LAST_COMMIT_MESSAGE" value="INV-30 create all connectors from OrderService" />
+    <MESSAGE value="INV-30 update UI and call getCandles by part" />
+    <option name="LAST_COMMIT_MESSAGE" value="INV-30 update UI and call getCandles by part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -601,14 +615,9 @@
           <option name="timeStamp" value="363" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Connectors/Data/Tinkoff/SandboxService/GetSandboxPortfolioResponseMap/GetSandboxPortfolioResponseMap.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="407" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/AssetController.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="417" />
+          <url>file://$PROJECT_DIR$/src/Main/UID/Controllers/PortfolioAnalyticsController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="424" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

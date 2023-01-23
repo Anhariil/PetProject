@@ -23,4 +23,12 @@ public class UnitsNano {
     public int getNano() {
         return nano;
     }
+
+    /**
+     * @return string units.nano like double
+     * example - 123.1000000000
+     */
+    public double getValue() {
+        return Double.valueOf((String) (getUnits() + "." + getNano()));
+    }
 }

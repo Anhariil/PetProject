@@ -48,7 +48,7 @@ public class GetSandboxPortfolioResponseMap extends Mapping {
             String responseLine = null;
             while ((responseLine = br.readLine()) != null) {
                 String nowLine = responseLine.trim();
-                System.out.println(nowLine); // test now string
+                //System.out.println(nowLine); // test now string
 
                 if (nowLine.equalsIgnoreCase("{")) // start on first {
                     start = true;

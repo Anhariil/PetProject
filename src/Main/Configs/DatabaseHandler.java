@@ -211,4 +211,8 @@ public class DatabaseHandler extends Configs {
 
         return resultString;
     }
+
+    public static String getValueByPositionUID(String value, String figi) {
+        return new DatabaseHandler().getValueByFigi(value, figi);
+    }
 }

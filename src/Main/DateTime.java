@@ -159,12 +159,16 @@ public class DateTime {
         int m = (this.getMonth() < 8) ? this.getMonth() % 2 : (this.getMonth() + 1) % 2;
         if (this.getMonth() == 2 && (this.getDay() + days > 28 + v)) {
             this.month += 1;
+            this.day = 1;
             plusDays(days - (28 + v - this.getDay()));
         } else if (this.getDay() + days > 30 + m) {
             if (this.month == 12) {
                 this.month = 1;
                 this.year += 1;
-            } else this.month += 1;
+            } else
+                this.month += 1;
+
+            this.day = 1;
             plusDays(days - (30 + m - this.getDay()));
         } else {
             this.day += days;

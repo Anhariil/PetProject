@@ -32,6 +32,9 @@ public class SecondController extends Controllers {
     private Button Button1;
 
     @FXML
+    private Button PortfolioAnalyticsButton;
+
+    @FXML
     private Label Label1;
 
     @FXML
@@ -77,6 +80,14 @@ public class SecondController extends Controllers {
         Button1.setOnAction(actionEvent -> {
             try {
                 changeScene("/Main/UID/UI/Welcome.fxml", actionEvent);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        PortfolioAnalyticsButton.setOnAction(actionEvent -> {
+            try {
+                changeScene("/Main/UID/UI/PortfolioAnalytics.fxml", actionEvent);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
